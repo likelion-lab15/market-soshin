@@ -12,10 +12,10 @@
   <title>마켓라이언 - 장바구니</title>
 </head>
 <body>
-  <header></header>
+
   <main>
-    <div class="cart">
-      <div class="cartList"></div>
+    <article class="cart">
+      <section class="cartList"></section>
       <section class="cradit">
         <div class="cradit__location">
           <h3 class="locationTitle">
@@ -44,7 +44,10 @@
             </li>
           </ul>
           <div class="expectedPrice-amount">
-            결제예정금액
+            <p class="expectedPrice-amount__inner">
+              <span>결제예정금액</span>
+              <span>원</span>
+            </p>
             <span class="expectedPrice-amount__save">
               <img src="../assets/icons/Badge (1).svg" alt="" />
               최대 36원 적립 일반 0.1%
@@ -60,7 +63,7 @@
           <li>상품별로 적립금 지급 기준이 다를 수 있습니다.(상품 상세 페이지에서 확인 가능합니다)</li>
         </ul>
       </section>
-    </div>
+    </article>
   </main>
   <footer></footer>
 </body>

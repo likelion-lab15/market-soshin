@@ -6,24 +6,12 @@ body {
   font-style: normal;
 }
 
-.header {
-  width: 100%;
-  height: 197px;
-  border: salmon 2px solid;
-}
-
 .cart {
   display: flex;
   width: 1050px;
   height: 709px;
   margin: 156px 435px 80px;
   justify-content: space-between;
-}
-
-.cartList {
-  width: 742px;
-  height: 298px;
-  background-color: lightpink;
 }
 
 .cradit {
@@ -105,6 +93,11 @@ body {
   height: 93px;
   padding: 24px 0 29px;
   line-height: 40px;
+}
+
+.expectedPrice-amount__inner {
+  display: flex;
+  justify-content: space-between;
 }
 
 .expectedPrice-amount__save {
