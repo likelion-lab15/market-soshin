@@ -10,21 +10,13 @@
   height: 370px;
 }
 
-.mainBanner__item {
-  text-align: center;
-  font-size: 0px;
-  background: #fff;
-
-  /* Center slide text vertically */
-}
-
 .mainBanner__link {
   display: inline-block;
-  width: 1920px;
+  width: 100%;
+  height: 370px;
 }
 
 .mainBanner__img {
-  display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
