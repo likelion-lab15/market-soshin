@@ -1,15 +1,16 @@
-.visual {
+.mainBanner {
   display: flex;
   justify-content: center;
 }
 
-.swiper {
+.mainBanner__wrapper {
   flex-shrink: 0;
-  width: 100%;
-  height: 100%;
+  position: relative;
+  width: 1920px;
+  height: 370px;
 }
 
-.swiper-slide {
+.mainBanner__item {
   text-align: center;
   font-size: 0px;
   background: #fff;
@@ -29,35 +30,25 @@
   align-items: center;
 }
 
-.swiper-slide a {
+.mainBanner__link {
   display: inline-block;
   width: 1920px;
 }
 
-.swiper-slide img {
+.mainBanner__img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* CSS */
-
-.swiper {
-  position: relative;
-  width: 1920px;
-  height: 370px;
-}
-
-/* 버튼 생성 */
-
-.swiper button {
+.mainBanner__button {
   width: 52px;
   height: 52px;
   border: none;
 }
 
-.swiper-button-next {
+.mainBanner__button--next {
   background: url('../../assets/icons/main-banner-next-button.png') no-repeat;
   top: 50%;
   transform: translateY(-50%);
@@ -68,7 +59,7 @@
   margin: auto 0 auto 590px; */
 }
 
-.swiper-button-prev {
+.mainBanner__button--prev {
   background: url('../../assets/icons/main-banner-prev-button.png') no-repeat;
   top: 50%;
   transform: translateY(-50%);
@@ -79,17 +70,7 @@
   margin: auto 590px auto 0; */
 }
 
-.swiper-button-prev,
-.swiper-button-next {
-  background-position: center;
-}
-
-.swiper-button-prev::after, 
-.swiper-button-next::after {
-  display: none;
-}
-
-.swiper-pagination {
+.mainBanner__pagination {
 left: 75%;
 width: 55px;
 height: 23px;
@@ -102,6 +83,16 @@ color: var(--white);
 bottom: 20px;
 }
 
+
+.mainBanner__button--next,
+.mainBanner__button--prev {
+  background-position: center;
+}
+
+.mainBanner__button--next::after,
+.mainBanner__button--prev::after {
+  display: none;
+}
 
 
 /* left: 75%;
