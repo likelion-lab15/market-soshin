@@ -1,0 +1,156 @@
+.products__carousel {
+  width: 100%;
+  height: 100%;
+}
+
+.products__product {
+  text-align: center;
+  /* font-size: 18px;
+  background: #fff; */
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.products {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.products__title {
+  width: max-content;
+  margin: 40px auto 0px auto;
+}
+
+.products__carousel {
+  display: flex;
+  margin: 40px 0;
+  overflow-x: hidden;
+  justify-content: space-between;
+}
+
+.products__wrapper {
+  position: relative;
+  margin: 40px 0;
+}
+
+.products__product {
+  float: left;
+  position: relative;
+}
+
+/* 버튼 */
+
+.products__button {
+  position: absolute;
+}
+
+.products__button--prev {
+  left: -12px;
+  background: url(/market-soshin/client/assets/icons/prevGroup.png) no-repeat;
+  background-size: 50% auto;
+  background-position: center;
+}
+.products__button--next {
+  right: -12px;
+  background: url(/market-soshin/client/assets/icons/prevGroup.png) no-repeat;
+  background-size: 50% auto;
+  background-position: center;
+}
+
+.products__button--prev::after,
+.products__button--next::after {
+  display: none;
+}
+
+/* 광고 */
+
+.advertisement {
+  width: 1050px;
+  padding: 40px 0;
+}
+
+/* 스와이퍼 템프핏 */
+
+/* .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+} */
+
+/* 성찬님 코드 */
+
+/* .product-click {
+  color: var(--black);
+  text-decoration: none;
+}
+
+.mainSub-titleRecommend-title {
+  color: var(--content);
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.product-image-container {
+  width: 248px;
+  margin: 0 8px;
+}
+.product-img {
+  width: 248px;
+  height: 320px;
+}
+
+.productCart {
+  position: absolute;
+  right: var(--text-10);
+  bottom: 110px;
+  border: none;
+  background-color: transparent;
+}
+
+.product-name {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: var(--regular);
+  font-size: var(--text-l6);
+  margin-top: var(--text-l6);
+}
+
+.discount-rate {
+  color: var(--accent-yellow);
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: var(--bold);
+  font-size: 20px;
+}
+.discount-price {
+  color: var(--content);
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: var(--bold);
+  font-size: 20px;
+}
+
+.original-price {
+  color: var(--gray-400);
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: var(--regular);
+  text-decoration: line-through;
+  font-size: var(--text-12);
+}
+ */
