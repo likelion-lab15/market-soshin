@@ -38,12 +38,12 @@ body {
   flex-direction: row;
   align-items: center;
   font-weight: var(--semi-bold);
-  font-size: var(--text-16);
+  font-size: var(--text-14);
 }
 
 .cartList__checkBox label {
   display: flex;
-  width: 140px;
+  width: 130px;
   height: 24px;
   justify-items: center;
   align-items: center;
@@ -131,6 +131,10 @@ body {
   align-items: center;
   border: none;
   background: var(--white);
+}
+
+.storage__button img {
+  transform: rotate(180deg);
 }
 
 /* 배송지 및 결제 금액 부분 */
