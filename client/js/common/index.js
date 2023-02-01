@@ -1,1 +1,2 @@
 
+export * form ".template.js"
