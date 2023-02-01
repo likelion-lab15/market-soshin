@@ -8,7 +8,7 @@
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="../css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./js/main.js" type="module"></script>
+  <script src="../js/login.js" type="module"></script>
   <title>마켓라이언 - 로그인</title>
 </head>
 <body>
@@ -16,11 +16,11 @@
   <main>
     <section class="login">
       <h2 class="login__title">로그인</h2>
-      <form action="POST" class="login__form">
+      <form class="login__form">
         <fieldset>
           <div class="loginAll">
-            <input type="text" id="loginId" name="loginId" placeholder="아이디를 입력해주세요"/>
-            <input type="text" id="loginPw" name="loginPw" placeholder="비밀번호를 입력해주세요"/>
+            <input type="text" id="loginId" name="id" placeholder="아이디를 입력해주세요"/>
+            <input type="password" id="loginPw" name="password" placeholder="비밀번호를 입력해주세요"/>
           </div>
           <ul class="loginForget">
             <li class="loginForget__id" tabindex="0">아이디 찾기</li>
