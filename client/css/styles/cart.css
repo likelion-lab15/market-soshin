@@ -17,7 +17,7 @@ body {
   width: 1050px;
   height: 709px;
   margin: 156px 435px 80px;
-  border: skyblue 1px solid;
+  /* border: skyblue 1px solid; */
   justify-content: space-between;
 }
 
@@ -33,7 +33,7 @@ body {
   width: 100%;
   height: 60px;
   padding: 18px 10px 16px 2px;
-  border-bottom: lightgreen 1px solid;
+  /* border-bottom: lightgreen 1px solid; */
   color: var(--content);
   flex-direction: row;
   align-items: center;
@@ -83,25 +83,54 @@ body {
 
 /* 카테고리 바디 */
 .cartList__body {
+  font-weight: var(--semi-bold);
+  font-size: var(--text-18);
   width: 100%;
   height: 180px;
-  border: lightblue 1px solid;
+  /* border: lightblue 1px solid; */
 }
 
 .storage {
   display: flex;
   padding: 15px 5px 15px 0px;
-  border: rebeccapurple 1px solid;
+  border-top: var(--content) 1px solid;
   justify-content: space-between;
   line-height: 30px;
 }
 
-.storage__name {
-  display: flex;
+.storage:last-child {
+  border-bottom: var(--gray-100) 1px solid;
 }
 
-.storage__name::before {
+.storage__name {
+  display: flex;
+  height: 30px;
+}
+
+.stroage__name .storage__name:before {
+  padding-right: 8px;
+}
+
+.storage:nth-child(1) .storage__name:before {
   content: url("../../assets/icons/drop.svg");
+  padding-right: 8px;
+}
+
+.storage:nth-child(2) .storage__name:before {
+  content: url("../../assets/icons/snow.svg");
+  padding-right: 8px;
+}
+
+.storage:nth-child(3) .storage__name:before {
+  content: url("../../assets/icons/sun.svg");
+  padding-right: 8px;
+}
+
+.storage__button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: var(--white);
 }
 
 /* 배송지 및 결제 금액 부분 */
