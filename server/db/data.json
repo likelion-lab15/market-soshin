@@ -79,6 +79,54 @@ const data= {
         "alt": "칼리 한돈 삼겹 베이컨"
       },
       "stock": 13
+    },
+    {
+      "id": "product-ckzk",
+      "name": "[Kalry's] 한돈 삼겹 베이컨",
+      "description": "무항생제 한돈 삼겹살의 고소한 풍미 그대로",
+      "price": 4500,
+      "saleRatio": 0.25,
+      "salePrice": 3375,
+      "image": {
+        "thumbnail": "bacon/thumbnail.jpg",
+        "view": "bacon/detail_view.jpg",
+        "banner": "bacon/detail_banner.jpg",
+        "info": "bacon/detail_info.jpg",
+        "alt": "칼리 한돈 삼겹 베이컨"
+      },
+      "stock": 13
+    },
+    {
+      "id": "product-ckzk",
+      "name": "[Kalry's] 한돈 삼겹 베이컨",
+      "description": "무항생제 한돈 삼겹살의 고소한 풍미 그대로",
+      "price": 4500,
+      "saleRatio": 0.25,
+      "salePrice": 3375,
+      "image": {
+        "thumbnail": "bacon/thumbnail.jpg",
+        "view": "bacon/detail_view.jpg",
+        "banner": "bacon/detail_banner.jpg",
+        "info": "bacon/detail_info.jpg",
+        "alt": "칼리 한돈 삼겹 베이컨"
+      },
+      "stock": 13
+    },
+    {
+      "id": "product-ckzk",
+      "name": "[Kalry's] 한돈 삼겹 베이컨",
+      "description": "무항생제 한돈 삼겹살의 고소한 풍미 그대로",
+      "price": 4500,
+      "saleRatio": 0.25,
+      "salePrice": 3375,
+      "image": {
+        "thumbnail": "bacon/thumbnail.jpg",
+        "view": "bacon/detail_view.jpg",
+        "banner": "bacon/detail_banner.jpg",
+        "info": "bacon/detail_info.jpg",
+        "alt": "칼리 한돈 삼겹 베이컨"
+      },
+      "stock": 13
     }
   ]
 }
