@@ -1,6 +1,6 @@
 .product-click {
-  text-decoration: none;
   color: var(--black);
+  text-decoration: none;
 }
 
 .mainSection {
@@ -9,6 +9,7 @@
 }
 
 .mainMain {
+  position: relative;
   margin: 40px 0;
 }
 
@@ -27,8 +28,8 @@
 
 .mainProduct {
   display: flex;
-  overflow-x: hidden;
   margin: 40px 0;
+  overflow-x: hidden;
   justify-content: space-between;
 }
 
@@ -39,8 +40,8 @@
 }
 
 .product-image-container {
-  margin: 0 8px;
   width: 248px;
+  margin: 0 8px;
 }
 .product-img {
   width: 248px;
@@ -87,14 +88,27 @@
   font-size: var(--text-12);
 }
 
-.prevGroup {
-  position: absolute;
-  transform: translate(-24px, -300px);
-}
-
+.prevGroup,
 .nextGroup {
   position: absolute;
-  transform: translate(1024px, -300px);
+}
+
+.swiper-button-prev {
+  left: -12px;
+  background: url(/market-soshin/client/assets/icons/prevGroup.png) no-repeat;
+  background-size: 50% auto;
+  background-position: center;
+}
+.swiper-button-next {
+  right: -12px;
+  background: url(/market-soshin/client/assets/icons/prevGroup.png) no-repeat;
+  background-size: 50% auto;
+  background-position: center;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
 }
 
 .mainAdvertisement {
