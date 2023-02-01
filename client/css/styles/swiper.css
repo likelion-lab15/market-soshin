@@ -1,8 +1,12 @@
 .mainBanner {
   display: flex;
-  width: clamp(1040px, 100vw, 1920px);
+  width: clamp(1050px, 100%, 1900px);
   margin: 0 auto;
   justify-content: center;
+}
+
+.mainBanner:hover .mainBanner__button {
+  opacity: 1;
 }
 
 .mainBanner__wrapper {
@@ -28,13 +32,15 @@
   width: 52px;
   height: 52px;
   border: none;
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
 }
 
 .mainBanner__button--next,
 .mainBanner__button--prev {
-  top: 50%;
+  top: 55%;
   background-position: center;
-  transform: translateY(-50%);
+  transform: translateY(-55%);
 }
 
 .mainBanner__button--next::after,
@@ -61,6 +67,7 @@ background: rgba(0, 0, 0, 0.15);
 color: var(--white);
 line-height: 23px;
 border-radius: 12px;
-font-size: 14px;
 font-weight: 400;
+font-size: 14px;
+
 } 
