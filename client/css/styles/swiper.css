@@ -1,0 +1,125 @@
+.visual {
+  display: flex;
+  justify-content: center;
+}
+
+.swiper {
+  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 0px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide a {
+  display: inline-block;
+  width: 1920px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CSS */
+
+.swiper {
+  position: relative;
+  width: 1920px;
+  height: 370px;
+}
+
+/* 버튼 생성 */
+
+.swiper button {
+  width: 52px;
+  height: 52px;
+  border: none;
+}
+
+.swiper-button-next {
+  background: url('../../assets/icons/main-banner-next-button.png') no-repeat;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20%;
+  /* top: 0;
+  bottom: 0;
+  left: 50%;
+  margin: auto 0 auto 590px; */
+}
+
+.swiper-button-prev {
+  background: url('../../assets/icons/main-banner-prev-button.png') no-repeat;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 20%;
+  /* top: 0;
+  bottom: 0;
+  right: 50%;
+  margin: auto 590px auto 0; */
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-position: center;
+}
+
+.swiper-button-prev::after, 
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-pagination {
+left: 75%;
+width: 55px;
+height: 23px;
+line-height: 23px;
+border-radius: 12px;
+background: rgba(0, 0, 0, 0.15);
+font-size: 14px;
+font-weight: 400;
+color: var(--white);
+bottom: 20px;
+}
+
+
+
+/* left: 75%;
+width: 55px;
+height: 20px;
+border-radius: 10px;
+background: rgba(0, 0, 0, 0.2);
+color: var(--white);
+bottom: 20px; */
+
+/* .swiper {
+  position: relative;
+}
+
+ .swiper .swiper-button-next {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 50%;
+  margin: auto 0px auto 590px;
+} */
