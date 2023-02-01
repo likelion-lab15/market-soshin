@@ -1,19 +1,57 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./js/main.js" type="module"></script>
-  <title>마켓라이언 - 홈페이지</title>
-</head>
-<body>
-  <header></header>
-  <main></main>
-  <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../server/db/data.json"></script>
+    <script src="./js/main.js" type="module"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="mainSection">
+      <div class="mainMain">
+        <div class="mainSub-title">
+          <span class="mainSub-titleRecommend-title">이 상품 어때요?</span>
+        </div>
+        <div class="mainProduct"></div>
+        <div class="nextGroup">
+          <a href="#">
+            <img
+              src="/market-soshin/client/assets/icons/Group.png"
+              alt="다음 그룹 보기"
+            />
+          </a>
+        </div>
+      </div>
+
+      <div class="mainAdvertisement">
+        <img
+          src="/market-soshin/client/assets/imgs/line-banner.png"
+          alt="광고 배너"
+        />
+      </div>
+
+      <div class="mainMain">
+        <div class="mainSub-title">
+          <span class="mainSub-titleRecommend-title">이 상품 어때요?</span>
+        </div>
+        <div class="mainProduct"></div>
+        <div class="nextGroup">
+          <a href="#">
+            <img
+              src="/market-soshin/client/assets/icons/Group.png"
+              alt="다음 그룹 보기"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

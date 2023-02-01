@@ -1,0 +1,125 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
+@import url(../config/normalize.css);
+@import url(../config/reset.css);
+@import url(../config/a11y.css);
+@import url(../config/theme.css);
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+}
+
+.a11y-hidden,
+legend {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
+.product-click {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.mainSection {
+  width: 1050px;
+  margin: 0 auto;
+}
+
+.mainMain {
+  margin: 40px 0;
+}
+
+.mainSub-titleRecommend-title {
+  color: var(--content);
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.mainSub-title {
+  width: max-content;
+  margin: 40px auto 0px auto;
+}
+
+.mainProduct {
+  display: flex;
+  overflow: auto;
+  margin: 40px 0;
+  justify-content: space-between;
+}
+
+.product {
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+
+.product-image-container {
+  width: 248px;
+}
+.product-img {
+  width: 248px;
+  height: 320px;
+}
+
+.productCart {
+  position: absolute;
+  right: var(--text-10);
+  bottom: 110px;
+  border: none;
+  background-color: transparent;
+}
+
+.product-name {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: var(--regular);
+  font-size: var(--text-l6);
+  margin-top: var(--text-l6);
+}
+
+.discount-rate {
+  color: var(--accent-yellow);
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: var(--bold);
+  font-size: 20px;
+}
+.discount-price {
+  color: var(--content);
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: var(--bold);
+  font-size: 20px;
+}
+
+.original-price {
+  color: var(--gray-400);
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: var(--regular);
+  text-decoration: line-through;
+  font-size: var(--text-12);
+}
+
+.nextGroup {
+  position: absolute;
+  transform: translate(1020px, -300px);
+}
+
+.mainAdvertisement {
+  width: 1050px;
+  padding: 40px 0;
+}
