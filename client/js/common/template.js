@@ -40,7 +40,7 @@ export const products = data.products.map(item => {
   
       <button type="button" class="product__button">
         <img
-          src="/market-soshin/client/assets/icons/Cart.svg"
+          src="/market-soshin/client/assets/icons/Cart2.svg"
           alt="장바구니 이미지"
         />
       </button>
