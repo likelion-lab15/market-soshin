@@ -8,9 +8,8 @@ data.products.map(item => {
   let salePrice2 = item.salePrice === 0 ? price : item.salePrice;
   let saleRatio = item.saleRatio * 100 !== 0 ? item.saleRatio * 100 + "%" : "";
 
-
-  function
-  let productTemplate = `
+  function templateMaking(thumbnail, alt, name, saleRatio, salePrice2, price) {
+    return `
     <div class="product">
       <a href="#" class="product-click">
         <div class="product-image-container">
@@ -49,9 +48,13 @@ data.products.map(item => {
       </button>
     </div>
   `;
+  }
 
   function insert(load, num) {
-    load[num].insertAdjacentHTML("beforeend", productTemplate);
+    load[num].insertAdjacentHTML(
+      "beforeend",
+      templateMaking(thumbnail, alt, name, saleRatio, salePrice2, price),
+    );
   }
 
   for (let i = 0; i < mainProduct.length; i++) insert(mainProduct, i);
