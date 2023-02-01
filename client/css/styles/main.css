@@ -1,12 +1,11 @@
-.header {
+.header__outer {
   position: relative;
   width: 1050px;
   height: 125px;
   margin: 0 auto;
-  font-family: 'Pretendard';
+  font-family: "Pretendard";
   font-style: normal;
 }
-
 
 /* 로고 */
 .logo {
@@ -60,7 +59,6 @@
   content: "";
 }
 
-
 /* 검색 폼 */
 .search {
   position: absolute;
@@ -92,7 +90,6 @@
   text-decoration: none;
 }
 
-
 /* 텍스트 링크 모음 */
 .header__member {
   display: flex;
@@ -118,7 +115,7 @@
 
 .divider {
   margin: 0 8px;
-  color: #D9D9D9;
+  color: #d9d9d9;
 }
 
 .etc__img {
@@ -139,7 +136,7 @@
   z-index: 99;
   width: 120px;
   height: 96px;
-  border: 1px solid #D9D9D9;
+  border: 1px solid #d9d9d9;
   background-color: rgb(255, 255, 255);
 }
 
@@ -147,10 +144,9 @@
   padding: 8px 0 0 10px;
 }
 
-.related:hover .related__list{
+.related:hover .related__list {
   visibility: visible;
 }
-
 
 /* 아이콘 배지 */
 .icon {
@@ -168,6 +164,143 @@
 
 .iconBasket {
   margin-left: 20px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 197px;
+  justify-content: center;
+}
+
+.mainMenu {
+  display: flex;
+  position: relative;
+  width: 1050px;
+  height: 72px;
+  margin: 0px auto;
+  padding: 16px 0px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mainMenu__category {
+  border: none;
+}
+
+.categoryButton {
+  display: flex;
+  position: relative;
+  width: 100px;
+  height: 70px;
+  border: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  font-size: var(--text-l6);
+  font-weight: var(--bold);
+}
+
+.categoryButton:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.categoryButton:hover .hamburgerIcon {
+  fill: var(--primary);
+}
+
+.mainMenu__category:hover .mainMenu__item {
+  visibility: visible;
+}
+
+.mainMenu__item {
+  z-index: 999;
+  display: flex;
+  visibility: hidden;
+  position: absolute;
+  top: 70px;
+  left: 8px;
+  border: var(--gray-200) 1px solid;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+}
+
+.mainMenu__item > li {
+  display: flex;
+  padding: 8px 70px 4px 10px;
+  color: var(--content);
+  align-items: center;
+  font-size: var(--text-14);
+  font-weight: var(--semi-bold);
+}
+
+.mainMenu__item > li > span {
+  padding-left: 12px;
+}
+
+.mainMenu__item img {
+  width: 24px;
+  height: 24px;
+}
+
+.mainMenu__item > li:hover {
+  background: var(--gray-50);
+  color: var(--primary);
+  fill: var(--primary);
+  cursor: pointer;
+}
+
+.mainMenu__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menuButton {
+  width: 150px;
+  height: 40px;
+  padding: 15px 40px;
+  margin: 0px 11px;
+  color: var(--content);
+  text-align: center;
+  background-color: var(--white);
+  font-size: var(--text-l6);
+  font-weight: var(--bold);
+  text-decoration: none;
+}
+
+.menuButton:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.menuButton span:hover {
+  border-bottom: var(--primary) 1px solid;
+}
+
+.noticeButton {
+  display: flex;
+  width: 120px;
+  height: 27px;
+  padding: 4px 8px;
+  border: var(--gray-300) 1px solid;
+  color: var(--content);
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 16px;
+  font-size: var(--text-12);
+  font-weight: var(--bold);
+}
+
+.point {
+  color: var(--primary);
+  padding-right: 3px;
 }
 
 a {
