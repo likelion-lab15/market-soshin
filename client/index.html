@@ -14,18 +14,18 @@
 <body>
   <header></header>
   <main>
-    <div class="visual"> 
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide"><a href="/"><img src="./assets/imgs/main-banner1.jpg" alt="메인배너"></a></div>
-          <div class="swiper-slide"><a href="/"><img src="./assets/imgs/main-banner2.jpg" alt="메인배너"></a></div>
-          <div class="swiper-slide"><a href="/"><img src="./assets/imgs/main-banner3.jpg" alt="메인배너"></a></div>
+    <section class="mainBanner"> 
+      <div class="swiper mySwiper mainBanner__wrapper--outer">
+        <div class="swiper-wrapper mainBanner__wrapper--inner">
+          <div class="swiper-slide mainBanner__img"><a href="/"><img src="./assets/imgs/main-banner1.jpg" alt="메인배너"></a></div>
+          <div class="swiper-slide mainBanner__img"><a href="/"><img src="./assets/imgs/main-banner2.jpg" alt="메인배너"></a></div>
+          <div class="swiper-slide mainBanner__img"><a href="/"><img src="./assets/imgs/main-banner3.jpg" alt="메인배너"></a></div>
         </div>
-        <div class="swiper-pagination"></div>
-        <button class="swiper-button-next" type="button"></button>
-        <button class="swiper-button-prev" type="button"></button>
+        <div class="swiper-pagination mainBanner__pagination"></div>
+        <button class="swiper-button-next mainBanner__button--next" type="button"></button>
+        <button class="swiper-button-prev mainBanner__button--prev" type="button"></button>
       </div>
-    </div>
+    </section>
   </main>
   <footer></footer>
 </body>
