@@ -1,4 +1,4 @@
-.product-click {
+/* .product-click {
   color: var(--black);
   text-decoration: none;
 }
@@ -34,7 +34,6 @@
 }
 
 .product {
-  /* overflow: hidden; */
   float: left;
   position: relative;
 }
@@ -111,7 +110,8 @@
   display: none;
 }
 
-.mainAdvertisement {
+.advertisement {
   width: 1050px;
   padding: 40px 0;
 }
+ */
