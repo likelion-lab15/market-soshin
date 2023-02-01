@@ -1,29 +1,23 @@
-.products__carousel {
+.swiper {
   width: 100%;
   height: 100%;
 }
 
-.products__product {
+.swiper-slide {
+  background: #fff;
   text-align: center;
-  /* font-size: 18px;
-  background: #fff; */
+  font-size: 18px;
+}
 
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .products {
+  position: relative;
   width: 1050px;
   margin: 0 auto;
 }
@@ -38,53 +32,37 @@
   font-size: 28px;
 }
 
-.products__carousel {
-  display: flex;
-  margin: 40px 0;
-  overflow-x: hidden;
-  justify-content: space-between;
-}
-
-.products__wrapper {
-  position: relative;
-  margin: 40px 0;
-}
-
-.products__product {
-  float: left;
-  position: relative;
-}
-
-.products__link {
+.product__link {
   color: var(--black);
   text-decoration: none;
 }
 
-.product__imagecontainer {
-  width: 248px;
-  margin: 0 8px;
-}
-.product__img {
-  width: 248px;
-  height: 320px;
+.product {
+  display: flex;
+  position: relative;
+  margin: 40px 0;
 }
 
+.product__imgContainer {
+  width: 248px;
+}
 .product__img {
-  display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .product__button {
   position: absolute;
   right: var(--text-10);
-  bottom: 110px;
+  bottom: 96px;
   border: none;
   background-color: transparent;
 }
 
-/* 물건 */
+.product__info {
+  height: 60px;
+  text-align: left;
+}
 
 .product__name {
   font-family: "Pretendard";
@@ -118,22 +96,20 @@
   font-size: var(--text-12);
 }
 
-/* 버튼 */
-
 .products__button {
-  position: absolute;
+  width: 50px;
+  height: 50px;
 }
 
 .products__button--prev {
-  left: -12px;
+  left: -25px;
   background: url(/market-soshin/client/assets/icons/prevGroup.png) no-repeat;
-  background-size: 50% auto;
   background-position: center;
 }
+
 .products__button--next {
-  right: -12px;
-  background: url(/market-soshin/client/assets/icons/prevGroup.png) no-repeat;
-  background-size: 50% auto;
+  right: -25px;
+  background: url(/market-soshin/client/assets/icons/nextGroup.png) no-repeat;
   background-position: center;
 }
 
@@ -142,9 +118,6 @@
   display: none;
 }
 
-/* 광고 */
-
 .advertisement {
-  width: 1050px;
-  padding: 40px 0;
+  text-align: center;
 }

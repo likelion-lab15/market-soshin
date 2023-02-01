@@ -10,7 +10,7 @@ export const products = data.products.map(item => {
 
   function templateMaking(thumbnail, alt, name, saleRatio, salePrice2, price) {
     return `
-    <div class="product">
+    <div class="swiper-slide product">
       <a href="#" class="product__link">
         <div class="product__imgContainer">
           <img class="product__img" src="/market-soshin/client/assets/${thumbnail}"
@@ -45,6 +45,7 @@ export const products = data.products.map(item => {
         />
       </button>
     </div>
+    
   `;
   }
 
