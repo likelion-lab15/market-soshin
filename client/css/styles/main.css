@@ -1,0 +1,167 @@
+.header {
+  position: relative;
+  width: 1050px;
+  height: 125px;
+  margin: 0 auto;
+  font-family: 'Pretendard';
+  font-style: normal;
+}
+
+
+/* 로고 */
+.logo {
+  position: absolute;
+  top: 48.5px;
+  left: 0;
+  cursor: pointer;
+}
+
+.header__logo {
+  padding: 55px 0 0 94px;
+  font-weight: var(--bold);
+}
+
+.header__logo button {
+  border: 0;
+  background-color: transparent;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.market__link {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.market__link::after {
+  position: absolute;
+  width: 1px;
+  height: 14px;
+  content: "";
+  margin: 5px 0 0 8px;
+  background-color: rgb(226, 226, 226);
+}
+
+.beauty__link {
+  position: relative;
+  color: var(--gray-400);
+  text-decoration: none;
+}
+
+.beauty__link::after {
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: -13px;
+  width: 8px;
+  height: 10px;
+  background: url(Vector.svg) 0 0 no-repeat;
+  content: "";
+}
+
+
+/* 검색 폼 */
+.search {
+  position: absolute;
+  top: 45px;
+  right: 320px;
+  width: 400px;
+  height: 48px;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  padding: 14px 0 0 14px;
+}
+
+.search__input {
+  border: none;
+  letter-spacing: 1px;
+  background-color: transparent;
+}
+
+.search__input:focus {
+  outline: none;
+}
+
+.search__button {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  border: 0;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+
+/* 텍스트 링크 모음 */
+.header__member {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.header__member li {
+  padding-top: 10px;
+  font-weight: var(--regular);
+  font-size: var(--text-12);
+}
+
+.header__member * {
+  color: var(--content);
+  text-decoration: none;
+}
+
+.signBtn {
+  color: var(--primary);
+}
+
+.divider {
+  margin: 0 8px;
+  color: #D9D9D9;
+}
+
+.etc__img {
+  width: 9px;
+  height: 6px;
+  margin: 0 0 1px 4px;
+}
+
+.related__list {
+  visibility: hidden;
+  position: absolute;
+  top: 34px;
+  right: 0;
+  z-index: 99;
+  width: 120px;
+  height: 96px;
+  border: 1px solid #D9D9D9;
+  background-color: rgb(255, 255, 255);
+}
+
+.related__list li {
+  padding: 8px 0 0 10px;
+}
+
+.related:hover .related__list{
+  visibility: visible;
+}
+
+
+/* 아이콘 배지 */
+.icon {
+  display: flex;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.iconLocation {
+  margin-right: 20px;
+}
+
+.iconBasket {
+  margin-left: 20px;
+}
