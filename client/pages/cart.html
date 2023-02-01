@@ -6,14 +6,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/main.js" type="module"></script>
   <title>마켓라이언 - 장바구니</title>
 </head>
 <body>
   <header></header>
-  <main></main>
+  <main>
+    <div class="cart">
+      <div class="cartList"></div>
+      <section class="cradit">
+        <div class="cradit__location">
+          <h3 class="locationTitle">
+            <img src="../assets/icons/Location.svg" alt="위치 이미지" />           
+            배송지
+          </h3>
+          <div class="locationInner">
+            <p class="locationInner__address">서울 중랑구 면목로 42길 11 (행운빌딩) 603호</p>
+            <div class="locationInner__shipping">샛별배송</div>
+            <button class="locationInner__change">배송지 변경</button>
+          </div>
+        </div>
+        <div class="cradit__price">
+          <ul class="epxectedPrice-list">
+            <li class="expectedPrice__item">
+              <span>상품금액</span>
+              <span>원</span>
+            </li>
+            <li class="expectedPrice__item">
+              <span>상품할인금액</span>
+              <span>원</span>
+            </li>
+            <li class="expectedPrice__item">
+              <span>배송비</span>
+              <span>원</span>
+            </li>
+          </ul>
+          <div class="expectedPrice-amount">
+            결제예정금액
+            <span class="expectedPrice-amount__save">
+              <img src="../assets/icons/Badge (1).svg" alt="" />
+              최대 36원 적립 일반 0.1%
+            </span>
+          </div>
+        </div>
+        <button class="cradit__button">주문하기</button>
+        <ul class="cradit__notice">
+          <li>쿠폰/적립금은 주문서에서 사용 가능합니다.</li>
+          <li>[주문완료] 상태일 경우에만 주문 취소 가능합니다.</li>
+          <li>[마이컬리 > 주문내역 상세페이지] 에서 직접 취소하실 수 있습니다.</li>
+          <li>쿠폰, 적립금 사용 금액을 제외한 실 결제 금액 기준으로 최종산정됩니다.</li>
+          <li>상품별로 적립금 지급 기준이 다를 수 있습니다.(상품 상세 페이지에서 확인 가능합니다)</li>
+        </ul>
+      </section>
+    </div>
+  </main>
   <footer></footer>
 </body>
 </html>
