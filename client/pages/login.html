@@ -6,14 +6,35 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/main.js" type="module"></script>
   <title>마켓라이언 - 로그인</title>
 </head>
 <body>
-  <header></header>
-  <main></main>
+  <header class="header"></header>
+  <main>
+    <section class="login">
+      <h2 class="login__title">로그인</h2>
+      <form action="POST" class="login__form">
+        <fieldset>
+          <div class="loginAll">
+            <input type="text" id="loginId" name="loginId" placeholder="아이디를 입력해주세요"/>
+            <input type="text" id="loginPw" name="loginPw" placeholder="비밀번호를 입력해주세요"/>
+          </div>
+          <ul class="loginForget">
+            <li class="loginForget__id" tabindex="0">아이디 찾기</li>
+            <span></span>
+            <li class="loginForget__pw" tabindex="0">비밀번호 찾기</li>
+          </ul>
+          <div class="loginComplete">
+            <button class="loginComplete__login">로그인</button>
+            <a href="#"><button class="loginComplete__signup">회원가입</button></a>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+  </main>
   <footer></footer>
 </body>
 </html>
