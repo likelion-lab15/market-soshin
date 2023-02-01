@@ -1,0 +1,134 @@
+.header {
+  display: flex;
+  width: 100%;
+  height: 170px;
+  justify-content: center;
+  align-items: end;
+}
+
+.mainMenu {
+  display: flex;
+  position: relative;
+  width: 1050px;
+  height: 72px;
+  margin: 0px auto;
+  padding: 16px 0px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.mainMenu__category {
+  border: none;
+}
+
+.categoryButton {
+  display: flex;
+  position: relative;
+  width: 100px;
+  height: 70px;
+  border: none;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  font-size: var(--text-l6);
+  font-weight: var(--bold);
+}
+
+.categoryButton:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.categoryButton:hover .hamburgerIcon {
+  fill: var(--primary);
+}
+
+.mainMenu__category:hover .mainMenu__item {
+  visibility: visible;
+}
+
+.mainMenu__item {
+  display: flex;
+  visibility: hidden;
+  position: absolute;
+  top: 70px;
+  left: 8px;
+  border: var(--gray-200) 1px solid;
+  flex-direction: column;
+}
+
+.mainMenu__item > li {
+  display: flex;
+  padding: 8px 70px 4px 10px;
+  color: var(--content);
+  align-items: center;
+  font-size: var(--text-14);
+  font-weight: var(--semi-bold);
+}
+
+.mainMenu__item > li > span {
+  padding-left: 12px;
+}
+
+.mainMenu__item img {
+  width: 24px;
+  height: 24px;
+}
+
+.mainMenu__item > li:hover {
+  background: var(--gray-50);
+  color: var(--primary);
+  fill: var(--primary);
+  cursor: pointer;
+}
+
+.mainMenu__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.menuButton {
+  width: 150px;
+  height: 40px;
+  padding: 15px 40px;
+  margin: 0px 11px;
+  color: var(--content);
+  text-align: center;
+  background-color: var(--white);
+  font-size: var(--text-l6);
+  font-weight: var(--bold);
+  text-decoration: none;
+}
+
+.menuButton:hover {
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.menuButton span:hover {
+  border-bottom: var(--primary) 1px solid;
+}
+
+.noticeButton {
+  display: flex;
+  width: 120px;
+  height: 27px;
+  padding: 4px 8px;
+  border: var(--gray-300) 1px solid;
+  color: var(--content);
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 16px;
+  font-size: var(--text-12);
+  font-weight: var(--bold);
+}
+
+.point {
+  color: var(--primary);
+  padding-right: 3px;
+}
