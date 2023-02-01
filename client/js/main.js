@@ -1,2 +1,1 @@
-import { mainProduct } from "./common/template.js";
-import { productsSwiper } from "./common/index.js";
+import { productsSwiper, products, mainProduct } from "./common/index.js";

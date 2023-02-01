@@ -1,6 +1,6 @@
-export const mainProduct = document.querySelectorAll(".mainProduct");
+export const mainProduct = document.querySelectorAll(".products__wrapper");
 
-data.products.map(item => {
+export const products = data.products.map(item => {
   let name = item.name;
   let thumbnail = item.image.thumbnail;
   let price = item.price;
@@ -11,25 +11,24 @@ data.products.map(item => {
   function templateMaking(thumbnail, alt, name, saleRatio, salePrice2, price) {
     return `
     <div class="product">
-      <a href="#" class="product-click">
-        <div class="product-image-container">
-          <img src="/market-soshin/client/assets/${thumbnail}"
-            class="product-img "
+      <a href="#" class="product__link">
+        <div class="product__imgContainer">
+          <img class="product__img" src="/market-soshin/client/assets/${thumbnail}"
             alt="${alt}"
           />
         </div>
-        <div class="product-info">
-          <h3 class="product-name">${name}</h3>
+        <div class="product__info">
+          <h3 class="product__name">${name}</h3>
           <div>
-            <div class="product-price">
+            <div>
               <div>
-                <span class="discount-rate">${saleRatio}</span>
-                <span class="discount-price">${
+                <span class="product__discountRate">${saleRatio}</span>
+                <span class="product__discountPrice">${
                   salePrice2.toLocaleString("ko-KR") + " 원"
                 }</span>
               </div>
               <div>
-                <span class="original-price">${(price =
+                <span class="product__price">${(price =
                   item.salePrice === 0
                     ? ""
                     : price.toLocaleString("ko-KR") + " 원")}</span>
@@ -38,11 +37,10 @@ data.products.map(item => {
           </div>
         </div>
       </a>
-
-      <button type="button" class="productCart">
+  
+      <button type="button" class="product__button">
         <img
           src="/market-soshin/client/assets/icons/Cart.svg"
-          class="cart-img"
           alt="장바구니 이미지"
         />
       </button>
