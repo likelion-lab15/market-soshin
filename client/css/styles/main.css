@@ -1,3 +1,28 @@
+.topBanner {
+  width: 1920px;
+  height: 50px;
+  background-color: var(--primary);
+}
+
+.topBanner__inner {
+  display: flex;
+  width: 1050px;
+  height: 42px;
+  margin: 0 435px;
+  color: var(--white);
+  align-items: center;
+  justify-content: center;
+  padding-top: 8px;
+}
+
+.topBanner__text em {
+  font-weight: var(--bold);
+}
+
+.topBanner__img {
+  margin-left: 341px;
+}
+
 .header {
   position: relative;
   width: 1050px;
@@ -38,8 +63,8 @@
   position: absolute;
   width: 1px;
   height: 14px;
-  content: "";
   margin: 5px 0 0 8px;
+  content: "";
   background-color: rgb(226, 226, 226);
 }
 
@@ -56,7 +81,7 @@
   right: -13px;
   width: 8px;
   height: 10px;
-  background: url(Vector.svg) 0 0 no-repeat;
+  background: url(/client/assets/icons/Vector.svg) 0 0 no-repeat;
   content: "";
 }
 
@@ -68,9 +93,9 @@
   right: 320px;
   width: 400px;
   height: 48px;
+  padding: 14px 0 0 14px;
   border: 1px solid var(--primary);
   border-radius: 4px;
-  padding: 14px 0 0 14px;
 }
 
 .search__input {
@@ -125,6 +150,10 @@
   width: 9px;
   height: 6px;
   margin: 0 0 1px 4px;
+}
+
+.related {
+  height: 50px;
 }
 
 .related__list {
