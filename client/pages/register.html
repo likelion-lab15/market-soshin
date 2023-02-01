@@ -1,19 +1,111 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./js/main.js" type="module"></script>
-  <title>마켓라이언 - 회원가입</title>
-</head>
-<body>
-  <header></header>
-  <main></main>
-  <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <title>마켓라이언 - 회원가입</title>
+  </head>
+  <body>
+    <main class="register__main">
+      <h2 class="register__title">회원가입</h2>
+      <div class="register__wrap">
+        <p><sup class="register__essential">*</sup>필수입력사항</p>
+        <form action="/" method="post">
+          <fieldset>
+            <legend>회원가입</legend>
+            <div class="register__input">
+              <label for="registerId"
+                >아이디<sup class="register__essential">*</sup></label
+              >
+              <input
+                type="text"
+                name="registerId"
+                id="registerId"
+                placeholder="아이디를 입력해주세요"
+              />
+              <button type="button">중복확인</button>
+            </div>
+            <div class="register__input">
+              <label for="registerPassword"
+                >비밀번호<sup class="register__essential">*</sup></label
+              >
+              <input
+                type="password"
+                name="registerPassword"
+                id="registerPassword"
+                placeholder="비밀번호를 입력해주세요"
+              />
+            </div>
+            <div class="register__input">
+              <label for="registerCheckPassword"
+                >비밀번호 확인<sup class="register__essential">*</sup></label
+              >
+              <input
+                type="password"
+                name="registerCheckPassword"
+                id="registerCheckPassword"
+                placeholder="비밀번호를 한 번 더 입력해주세요"
+              />
+            </div>
+            <div class="register__input">
+              <label for="registerName"
+                >이름<sup class="register__essential">*</sup></label
+              >
+              <input
+                type="text"
+                name="registerName"
+                id="registerName"
+                placeholder="이름을 한 번 더 입력해주세요"
+              />
+            </div>
+            <div class="register__input">
+              <label for="registerMail"
+                >이메일<sup class="register__essential">*</sup></label
+              >
+              <input
+                type="email"
+                name="registerMail"
+                id="registerMail"
+                placeholder="예) marketkarly@karly.com"
+              />
+              <button type="button">중복확인</button>
+            </div>
+            <div class="register__input">
+              <label for="registerNum"
+                >휴대폰<sup class="register__essential">*</sup></label
+              >
+              <input
+                type="number"
+                name="registerNum"
+                id="registerNum"
+                placeholder="숫자만 입력해주세요."
+              />
+              <button type="button">인증번호 받기</button>
+            </div>
+
+            <div class="register__input">
+              <span for="register__address"
+                >주소<sup class="register__essential">*</sup></span
+              >
+              <button class="register__addressBtn" type="button">
+                주소 검색
+              </button>
+            </div>
+            <div class="register__input">
+              <label for="register__gender">성별</label>
+              <input type="radio" name="gender" id="register__gender" />
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+  </body>
 </html>
