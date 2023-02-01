@@ -1,31 +1,3 @@
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/static/pretendard.css");
-@import url(../config/normalize.css);
-@import url(../config/reset.css);
-@import url(../config/a11y.css);
-@import url(../config/theme.css);
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Pretendard Variable", Pretendard, -apple-system,
-    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
-    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
-    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-}
-
-.a11y-hidden,
-legend {
-  overflow: hidden;
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  clip-path: polygon(0 0, 0 0, 0 0);
-}
-
 .product-click {
   text-decoration: none;
   color: var(--black);
@@ -55,18 +27,19 @@ legend {
 
 .mainProduct {
   display: flex;
-  overflow: auto;
+  overflow-x: hidden;
   margin: 40px 0;
   justify-content: space-between;
 }
 
 .product {
-  overflow: hidden;
+  /* overflow: hidden; */
   float: left;
   position: relative;
 }
 
 .product-image-container {
+  margin: 0 8px;
   width: 248px;
 }
 .product-img {
@@ -114,9 +87,14 @@ legend {
   font-size: var(--text-12);
 }
 
+.prevGroup {
+  position: absolute;
+  transform: translate(-24px, -300px);
+}
+
 .nextGroup {
   position: absolute;
-  transform: translate(1020px, -300px);
+  transform: translate(1024px, -300px);
 }
 
 .mainAdvertisement {
