@@ -26,7 +26,7 @@
   --blue-800: #002966;
   --blue-900: #001433;
   --info-error: #f03f40;
-  
+
   /* font-size */
   --text-10: 10px;
   --text-12: 12px;
@@ -37,4 +37,5 @@
   --regular: 400;
   --semi-bold: 500;
   --bold: 600;
+  --extra-bold: 700;
 }
