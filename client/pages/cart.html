@@ -6,14 +6,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="../css/style.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="./js/main.js" type="module"></script>
   <title>마켓라이언 - 장바구니</title>
 </head>
 <body>
-  <header></header>
-  <main></main>
+  <header class="header"></header>
+  <main>
+    <div class="cart">
+      <div class="cartList">
+        <div class="cartList__head">
+          <label for="" class="cartList__check"
+            ><input type="radio" /> <span>전체선택</span></label
+          >
+          <span>|</span>
+          <button class="cartList__clear">선택삭제</button>
+        </div>
+        <div class="cartList__body">
+          <h4 class="storage">
+            <span class="storage__name"></span>
+            <button class="stroage__button"></button>
+          </h4>
+        </div>
+        <div class="cartList__footer">
+          <label for="" class="cartList__check"
+            ><input type="radio" /> <span>전체선택</span></label
+          >
+          <span>|</span>
+          <button class="cartList__clear">선택삭제</button>
+        </div>
+      </div>
+      <section class="cradit"></section>
+    </div>
+  </main>
   <footer></footer>
 </body>
 </html>

@@ -1,0 +1,57 @@
+/* header 영역 */
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  height: 197px;
+  border: salmon 2px solid;
+}
+
+.cart {
+  margin: 156px 435px 80px;
+  width: 1050px;
+  height: 709px;
+  border: skyblue 2px solid;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cartList {
+  width: 742px;
+  height: 100%;
+  border: lightpink 2px solid;
+}
+
+/* 카테고리 헤드 */
+.cartList__head {
+  width: 100%;
+  height: 60px;
+  padding: 18px 10px 16px 2px;
+  border: lightgreen 2px solid;
+}
+
+/* 카테고리 바디 */
+.cartList__body {
+  width: 100%;
+  height: 180px;
+  border: lightblue 2px solid;
+}
+
+/* 카테고리 푸터 */
+.cartList__footer {
+  width: 100%;
+  height: 60px;
+  padding: 18px 10px 16px 2px;
+  border: orange 2px solid;
+}
+
+.cradit {
+  width: 284px;
+  height: 709px;
+  border: lightseagreen 2px solid;
+}
