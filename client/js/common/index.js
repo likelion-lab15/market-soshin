@@ -1,2 +1,2 @@
-
-export * form ".template.js"
+export * from "./swiper.js";
+export * from "./template.js";
