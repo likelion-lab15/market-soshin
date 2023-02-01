@@ -1,28 +1,3 @@
-.topBanner {
-  width: 1920px;
-  height: 50px;
-  background-color: var(--primary);
-}
-
-.topBanner__inner {
-  display: flex;
-  width: 1050px;
-  height: 42px;
-  margin: 0 435px;
-  color: var(--white);
-  align-items: center;
-  justify-content: center;
-  padding-top: 8px;
-}
-
-.topBanner__text em {
-  font-weight: var(--bold);
-}
-
-.topBanner__img {
-  margin-left: 341px;
-}
-
 .header {
   position: relative;
   width: 1050px;
