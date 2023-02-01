@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./js/main.js" type="module"></script>
-  <title>마켓라이언 - 장바구니</title>
-</head>
-<body>
-  <header class="header"></header>
-  <main>
-    <div class="cart">
-      <div class="cartList">
-        <div class="cartList__head">
-          <label for="" class="cartList__check"
-            ><input type="radio" /> <span>전체선택</span></label
-          >
-          <span>|</span>
-          <button class="cartList__clear">선택삭제</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <title>마켓라이언 - 장바구니</title>
+  </head>
+  <body>
+    <header class="header"></header>
+    <main>
+      <div class="cart">
+        <div class="cartList">
+          <!-- 장바구니 헤드 -->
+          <div class="cartList__checkBox">
+            <label for="checkAll">
+              <input type="checkbox" id="checkAll" />
+              <span>전체선택 (0/3)</span>
+            </label>
+            <button class="cartList__clear">선택삭제</button>
+          </div>
+          <!-- 장바구니 바디 -->
+          <div class="cartList__body">
+            <h4 class="storage">
+              <span class="storage__name">냉장 식품</span>
+              <button class="stroage__button"></button>
+            </h4>
+            <h4 class="storage">
+              <span class="storage__name">냉동 식품</span>
+              <button class="stroage__button"></button>
+            </h4>
+            <h4 class="storage">
+              <span class="storage__name">상온 식품</span>
+              <button class="stroage__button"></button>
+            </h4>
+          </div>
+          <!-- 장바구니 푸터 -->
+          <div class="cartList__checkBox">
+            <label for="checkAll">
+              <input type="checkbox" id="checkAll" />
+              <span>전체선택 (0/3)</span>
+            </label>
+            <button class="cartList__clear">선택삭제</button>
+          </div>
         </div>
-        <div class="cartList__body">
-          <h4 class="storage">
-            <span class="storage__name"></span>
-            <button class="stroage__button"></button>
-          </h4>
-        </div>
-        <div class="cartList__footer">
-          <label for="" class="cartList__check"
-            ><input type="radio" /> <span>전체선택</span></label
-          >
-          <span>|</span>
-          <button class="cartList__clear">선택삭제</button>
-        </div>
+        <section class="cradit"></section>
       </div>
-      <section class="cradit"></section>
-    </div>
-  </main>
-  <footer></footer>
-</body>
+    </main>
+    <footer></footer>
+  </body>
 </html>

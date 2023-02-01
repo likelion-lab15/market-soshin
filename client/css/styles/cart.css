@@ -13,45 +13,100 @@ body {
 }
 
 .cart {
-  margin: 156px 435px 80px;
+  display: flex;
   width: 1050px;
   height: 709px;
-  border: skyblue 2px solid;
-  display: flex;
+  margin: 156px 435px 80px;
+  border: skyblue 1px solid;
   justify-content: space-between;
 }
 
 .cartList {
   width: 742px;
   height: 100%;
-  border: lightpink 2px solid;
+  border: lightpink 1px solid;
 }
 
-/* 카테고리 헤드 */
-.cartList__head {
+/* 카테고리 헤드, 푸터 공통 */
+.cartList__checkBox {
+  display: flex;
   width: 100%;
   height: 60px;
   padding: 18px 10px 16px 2px;
-  border: lightgreen 2px solid;
+  border-bottom: lightgreen 1px solid;
+  color: var(--content);
+  flex-direction: row;
+  align-items: center;
+  font-weight: var(--semi-bold);
+  font-size: var(--text-16);
+}
+
+.cartList__checkBox label {
+  display: flex;
+  width: 140px;
+  height: 24px;
+  justify-items: center;
+  align-items: center;
+  /* border: pink 2px solid; */
+  padding-left: 35px;
+  background-image: url(../../assets/icons/isChecked=false.svg);
+  background-repeat: no-repeat;
+}
+
+.cartList__checkBox span {
+  padding-right: 5px;
+}
+
+.cartList__checkBox input[type="checkbox"] {
+  display: none;
+}
+
+.cartList__clear::before {
+  display: inline-block;
+  width: 1px;
+  height: 14px;
+  background: var(--gray-200);
+  content: "";
+  vertical-align: middle;
+  margin-right: 15px;
+  /* background: red; */
+}
+
+.cartList__clear {
+  height: 24px;
+  border: none;
+  background: var(--white);
+  font-weight: var(--semi-bold);
+  font-size: var(--text-16);
+  /* border: orange 2px solid; */
 }
 
 /* 카테고리 바디 */
 .cartList__body {
   width: 100%;
   height: 180px;
-  border: lightblue 2px solid;
+  border: lightblue 1px solid;
 }
 
-/* 카테고리 푸터 */
-.cartList__footer {
-  width: 100%;
-  height: 60px;
-  padding: 18px 10px 16px 2px;
-  border: orange 2px solid;
+.storage {
+  display: flex;
+  padding: 15px 5px 15px 0px;
+  border: rebeccapurple 1px solid;
+  justify-content: space-between;
+  line-height: 30px;
 }
 
+.storage__name {
+  display: flex;
+}
+
+.storage__name::before {
+  content: url("../../assets/icons/drop.svg");
+}
+
+/* 배송지 및 결제 금액 부분 */
 .cradit {
   width: 284px;
   height: 709px;
-  border: lightseagreen 2px solid;
+  border: lightseagreen 1px solid;
 }
