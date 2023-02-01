@@ -15,37 +15,56 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="mainSection">
-      <div class="mainMain">
-        <div class="mainSub-title">
-          <span class="mainSub-titleRecommend-title">이 상품 어때요?</span>
-        </div>
-        <div class="mainProduct"></div>
-        <div class="prevGroup">
-          <a href="#">
-            <img
-              src="/market-soshin/client/assets/icons/prevGroup.png"
-              alt="이전 그룹 보기"
-            />
-          </a>
-        </div>
-        <div class="nextGroup">
-          <a href="#">
-            <img
-              src="/market-soshin/client/assets/icons/nextGroup.png"
-              alt="다음 그룹 보기"
-            />
-          </a>
-        </div>
-      </div>
+    <main class="main">
+      <section class="products">
+        <h2 class="a11yHidden">추천 상품</h2>
 
-      <div class="mainAdvertisement">
+        <p class="products__title">이 상품 어때요?</p>
+
+        <div class="swiper mySwiper products__carousel">
+          <div class="swiper-wrapper products__wrapper">
+            <div class="swiper-slide products__product">Slide 1</div>
+          </div>
+          <div
+            class="swiper-button-next products__button products__button--next"
+          ></div>
+          <div
+            class="swiper-button-prev products__button products__button--prev"
+          ></div>
+        </div>
+      </section>
+
+      <div class="advertisement">
         <img
+          class="advertisement__img"
           src="/market-soshin/client/assets/imgs/line-banner.png"
           alt="광고 배너"
         />
       </div>
+    </main>
 
+    <!-- <section class="mainSection">
+      <div class="mainMain">
+        <div class="prevGroup swiper-button-prev">
+          <a href="#">
+            <img
+              src="/market-soshin/client/assets/icons/prevGroup.png"
+              alt="이전 그룹 보기"
+            />
+          </a>
+        </div>
+        <div class="nextGroup swiper-button-next">
+          <a href="#">
+            <img
+              src="/market-soshin/client/assets/icons/nextGroup.png"
+              alt="다음 그룹 보기"
+            />
+          </a>
+        </div>
+      </div>
+      </section>-->
+
+    <!-- 
       <div class="mainMain">
         <div class="mainSub-title">
           <span class="mainSub-titleRecommend-title">이 상품 어때요?</span>
@@ -67,7 +86,6 @@
             />
           </a>
         </div>
-      </div>
-    </section>
+      </div> -->
   </body>
 </html>
