@@ -3,5 +3,6 @@ import {
   productsSwiper2,
   products,
   mainProduct,
-  mainBannerSwiper,
 } from "./common/index.js";
+
+import { mainBannerSwiper } from "./swiper/index.js";
