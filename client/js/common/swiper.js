@@ -21,18 +21,3 @@ export let productsSwiper2 = new Swiper(".mySwiper2", {
     prevEl: ".button2-prev",
   },
 });
-
-// mainBanner
-export const mainBannerSwiper = new Swiper(".mySwiper", {
-  autoplay: true,
-  loop: true,
-  speed: 1000,
-  pagination: {
-    el: ".mainBanner__pagination",
-    type: "fraction",
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
