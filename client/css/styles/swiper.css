@@ -59,8 +59,11 @@
 }
 
 .mainBanner__pagination {
+  position: absolute;
   bottom: 20px;
   left: 75%;
+  display: flex;
+  justify-content: center;
   width: 55px;
   height: 23px;
   background: rgba(0, 0, 0, 0.15);
@@ -69,4 +72,6 @@
   border-radius: 12px;
   font-weight: 400;
   font-size: 14px;
+  z-index: 10;
 }
+
