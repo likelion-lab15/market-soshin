@@ -10,6 +10,8 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../server/db/data.json"></script>
+
     <script src="./js/main.js" type="module"></script>
     <title>마켓라이언 - 홈페이지</title>
   </head>
@@ -310,13 +312,13 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main">
       <section class="mainBanner">
         <h2 class="a11yHidden">메인 배너</h2>
         <div class="swiper mySwiper mainBanner__wrapper">
           <div class="swiper-wrapper mainBanner__carousel">
             <div class="swiper-slide mainBanner__item">
-              <a class="mainBanner__link" href="/"
+              <a class="mainBanner__link" href="#"
                 ><img
                   class="mainBanner__img"
                   src="./assets/imgs/main-banner1.jpg"
@@ -324,7 +326,7 @@
               /></a>
             </div>
             <div class="swiper-slide mainBanner__item">
-              <a class="mainBanner__link" href="/"
+              <a class="mainBanner__link" href="#"
                 ><img
                   class="mainBanner__img"
                   src="./assets/imgs/main-banner2.jpg"
@@ -332,7 +334,7 @@
               /></a>
             </div>
             <div class="swiper-slide mainBanner__item">
-              <a class="mainBanner__link" href="/"
+              <a class="mainBanner__link" href="#"
                 ><img
                   class="mainBanner__img"
                   src="./assets/imgs/main-banner3.jpg"
@@ -350,6 +352,45 @@
             type="button"
           ></button>
         </div>
+      </section>
+      <section class="products">
+        <h2 class="a11yHidden">추천 상품</h2>
+
+        <p class="products__title">이 상품 어때요?</p>
+
+        <div class="swiper mySwiper1 products__carousel">
+          <div class="swiper-wrapper products__wrapper"></div>
+        </div>
+        <div
+          class="swiper-button-next button1-next products__button products__button--next"
+        ></div>
+        <div
+          class="swiper-button-prev button1-prev products__button products__button--prev"
+        ></div>
+      </section>
+
+      <div class="advertisement">
+        <img
+          class="advertisement__img"
+          src="../client/assets/imgs/line-banner.png"
+          alt="광고 배너"
+        />
+      </div>
+
+      <section class="products">
+        <h2 class="a11yHidden">추천 상품</h2>
+
+        <p class="products__title">놓치면 후회할 가격</p>
+
+        <div class="swiper mySwiper2 products__carousel">
+          <div class="swiper-wrapper products__wrapper"></div>
+        </div>
+        <div
+          class="swiper-button-next button2-next products__button products__button--next"
+        ></div>
+        <div
+          class="swiper-button-prev button2-prev products__button products__button--prev"
+        ></div>
       </section>
     </main>
     <footer>

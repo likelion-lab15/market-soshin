@@ -50,24 +50,23 @@
 
 .mainBanner__button--next {
   right: 20%;
-  background: url('../../assets/icons/main-banner-next-button.png') no-repeat;
+  background: url("../../assets/icons/main-banner-next-button.png") no-repeat;
 }
 
 .mainBanner__button--prev {
   left: 20%;
-  background: url('../../assets/icons/main-banner-prev-button.png') no-repeat;
+  background: url("../../assets/icons/main-banner-prev-button.png") no-repeat;
 }
 
 .mainBanner__pagination {
-bottom: 20px;
-left: 75%;
-width: 55px;
-height: 23px;
-background: rgba(0, 0, 0, 0.15);
-color: var(--white);
-line-height: 23px;
-border-radius: 12px;
-font-weight: 400;
-font-size: 14px;
-
-} 
+  bottom: 20px;
+  left: 75%;
+  width: 55px;
+  height: 23px;
+  background: rgba(0, 0, 0, 0.15);
+  color: var(--white);
+  line-height: 23px;
+  border-radius: 12px;
+  font-weight: 400;
+  font-size: 14px;
+}
