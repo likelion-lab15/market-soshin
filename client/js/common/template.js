@@ -13,7 +13,7 @@ export const products = data.products.map(item => {
     <div class="swiper-slide product">
       <a href="#" class="product__link">
         <div class="product__imgContainer">
-          <img class="product__img" src="/market-soshin/client/assets/${thumbnail}"
+          <img class="product__img" src="../client/assets/${thumbnail}"
             alt="${alt}"
           />
         </div>
@@ -40,7 +40,7 @@ export const products = data.products.map(item => {
   
       <button type="button" class="product__button">
         <img
-          src="/market-soshin/client/assets/icons/Cart2.svg"
+          src="../client/assets/icons/Cart2.svg"
           alt="장바구니 이미지"
         />
       </button>
