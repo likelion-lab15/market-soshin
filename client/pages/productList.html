@@ -12,6 +12,7 @@
   <title>마켓라이언 - 제품목록</title>
 </head>
 <body>
+  <!-- 헤더 -->
   <header class="header">
     <div class="header__outer">
       <!-- 로고 -->
@@ -307,9 +308,61 @@
       </ul>
     </nav>
   </header>
-  <main>
-    
+
+  <!-- 메인 -->
+  <main class="main">
+    <h2 class="main__title">베스트</h2>
+
+    <!-- 사이드 필터 -->
+    <aside class="sideNavigation"></aside>
+
+    <!-- 제품 목록 -->
+    <section class="productList">
+
+      <div class="productList__recommendWrapper">
+        <!-- 사이드 필터에 따라 상품 수가 달라진다 -->
+        <div class="productList__productAmount">총 <span class="productList__total">273</span>건</div>
+        <ul class="productList__recommend">
+          <ul class="productList__recommendOption"><a class="productList__recommendLink" href="#">추천순</a></ul>
+          <ul class="productList__recommendOption"><a class="productList__recommendLink" href="#">신상품순</a></ul>
+          <ul class="productList__recommendOption"><a class="productList__recommendLink" href="#">판매량순</a></ul>
+          <ul class="productList__recommendOption"><a class="productList__recommendLink" href="#">혜택순</a></ul>
+          <ul class="productList__recommendOption"><a class="productList__recommendLink" href="#">낮은 가격순</a></ul>
+          <ul class="productList__recommendOption"><a class="productList__recommendLink" href="#">높은 가격순</a></ul>
+        </ul>
+      </div>
+
+      <!-- 필터링이 동작되면 눈에 보인다 -->
+      <div class="productList__filterWrapper productList__bottomWrapper--hidden"></div>
+
+      <!-- 제품 리스트, 비동기 데이터로 받아와야겠지? 다른 페이지 CSS 넘어옴 -->
+      <div class="productList__itemWrapper">
+        <a class="productListItem" href="#">
+          <div class="productListItem__imgWrapper">
+            <img class="productListItem__img" src="../assets/bacon/detail_view.jpg" alt="존맛탱음식" />
+          </div>
+          <div class="productListItem__metaWrapper">
+            <span class="productListItem__delivery">샛별배송</span>
+            <h3 class="productListItem__name">유명산지 설향딸기 550g</h3>
+            <p class="productListItem__info">유명산지에서 전하는 제철 딸기</p>
+            <div class="productListItem__priceWrapper">
+              <div class="price__priceWrapper">
+                <span class="productListItem__discount">7</span>%
+                <span class="productListItem__price">10,990</span>원
+              </div>
+              <div class="productListItem__">
+                <span class="productListItem__originalPrice">11,900</span>원
+              </div>
+            </div>
+            <span class="productListItem__label">Karly Only</span>
+            <span class="productListItem__label">한정 수량</span>
+          </div>
+        </a>
+      </div>
+    </section>
   </main>
+
+  <!-- 푸터 -->
   <footer class="footer">
     <div class="footer__top">
       <div>
