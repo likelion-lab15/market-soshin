@@ -1,3 +1,8 @@
+.header {
+  position: relative;
+  z-index: 1000;
+}
+
 .header__outer {
   position: relative;
   width: 1050px;
