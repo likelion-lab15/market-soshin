@@ -3,6 +3,8 @@
   width: clamp(1050px, 100%, 1900px);
   margin: 0 auto;
   justify-content: center;
+  position: relative;
+  z-index: -999;
 }
 
 .mainBanner:hover .mainBanner__button {
