@@ -23,16 +23,23 @@
 
 .productList__recommend {
   display: flex;
+  align-items: center;
   color: var(--gray-300);
 }
 
-.productList__recommendLinkIcon {
+/* .productList__recommendLinkIcon {
   display: inline-block;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
   
-}
+} */
+
+/* .productList__recommendLinkIcon svg {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+} */
 
 .productList__recommendOption:after {
   display: inline-block;
