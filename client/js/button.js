@@ -16,11 +16,12 @@ function plusHandler() {
 }
 
 function minusHandler() {
-  if (i > 0) {
+  if (i > 1) {
     i--
     result.textContent = i;
   } else {
-    // alert('금지')
+    minus.classList.add('quantity__minus')
+    minus.classList.remove('quantity__minus--change')
   }
 }
 
