@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="./css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="../server/db/data.json"></script>
-
     <script src="./js/main.js" type="module"></script>
+
     <title>마켓라이언 - 홈페이지</title>
   </head>
   <body>
@@ -392,6 +392,45 @@
           class="swiper-button-prev button2-prev products__button products__button--prev"
         ></div>
       </section>
+      <div class="popUp hidden">
+        <div class="popUp__overlay">"</div>
+        <div class="popUp__content">
+          <div class="popUp__product--name">
+            <span class="product__name">${name}</span>
+          </div>
+
+          <div class="popUp__product--count">
+            <div>
+              <span class="product__discountPrice"
+                >${ salePrice2.toLocaleString("ko-KR") + " 원" }</span
+              >
+              <span class="product__price"
+                >${(price = item.salePrice === 0 ? "" :
+                price.toLocaleString("ko-KR") + " 원")}</span
+              >
+            </div>
+            <div>수량설정버튼</div>
+          </div>
+
+          <div class="popUp__product--total">
+            <p class="total--count">합계</p>
+            <p class="total--price">
+              ${ salePrice2.toLocaleString("ko-KR") + " 원" }
+            </p>
+          </div>
+          <div class="popUp__product--benefit">
+            <span class="benefit--save">적립</span
+            ><span class="benefit--explain">
+              로그인 후, 회원할인가와 적립혜택 제공
+            </span>
+          </div>
+
+          <div class="popUp__button--container">
+            <button id="closePopup">취소</button>
+            <button id="putCart">장바구니 담기</button>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <div class="footer__top">

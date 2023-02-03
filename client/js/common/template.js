@@ -38,14 +38,14 @@ export const products = data.products.map(item => {
         </div>
       </a>
   
-      <button type="button" class="product__button">
+      <button type="button" class="product__button" id="open">
         <img
           src="../client/assets/icons/Cart2.svg"
           alt="장바구니 이미지"
         />
-      </button>
+      </button> 
     </div>
-    
+  
   `;
   }
 

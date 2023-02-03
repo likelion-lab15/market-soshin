@@ -4,4 +4,7 @@ import {
   products,
   mainProduct,
   mainBannerSwiper,
+  openModal,
+  closeModal,
+  putModal,
 } from "./common/index.js";
