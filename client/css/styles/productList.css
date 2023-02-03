@@ -23,34 +23,30 @@
 
 .productList__recommend {
   display: flex;
-  align-items: center;
   color: var(--gray-300);
 }
 
-/* .productList__recommendLinkIcon {
-  display: inline-block;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  
-} */
+.productList__recommendOption {
+  display: flex;
+  align-items: center;
+}
 
-/* .productList__recommendLinkIcon svg {
+.productList__recommendLinkIcon {
   display: inline-block;
-  height: 30px;
-  width: 30px;
-} */
+  width: 24px;
+  height: 24px;  
+  margin-left: 4px;
+}
 
 .productList__recommendOption:after {
   display: inline-block;
-  background: var(--gray-300);
   position: relative;
-  top: 50%;
+  top: 1px;
   width: 1px;
-  height: 16px;
+  height: 10px;
   margin: 0px 8px;
+  background: var(--gray-300);
   content: "";
-  transform: translateY(-50%);
 }
 
 .productList__recommendOption:first-child {
