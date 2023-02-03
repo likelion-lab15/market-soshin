@@ -4,9 +4,6 @@ const popUp = document.querySelector(".popUp");
 const productName = document.querySelector(".product__name");
 const productDiscountPrice = document.querySelector(".product__discountPrice");
 const productPrice = document.querySelector(".product__price");
-// console.log(productName.textContent);
-// console.log(productDiscountPrice.textContent);
-// console.log(productPrice.textContent);
 
 export function cartTemplateMaking(name, salePrice, originalPrice) {
   return `
