@@ -124,11 +124,21 @@
   font-size: 12px;
   border-radius: 4px;
   padding: 4px;
+  margin-bottom: 24px;
 }
 
 /* 카트 아이콘 */
 .productListItem__button {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 260px;
+  right: 15px;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  line-height: 15px;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
