@@ -4,9 +4,9 @@ import {
   products,
   mainProduct,
   mainBannerSwiper,
-  // openModal,
-  // closeModal,
-  // putModal,
+  openModal,
+  closeModal,
+  putModal,
   addCart,
   cartTemplateMaking,
   insertCartModal,
@@ -24,18 +24,6 @@ insertCartModal(popUp);
 const putBtn = popUp.querySelector("#putCart");
 const closeBtn = popUp.querySelector("#closePopup");
 const openButton = document.querySelectorAll("#open");
-
-function openModal() {
-  popUp.classList.remove("hidden");
-}
-
-function closeModal() {
-  popUp.classList.add("hidden");
-}
-
-function putModal() {
-  popUp.classList.add("hidden");
-}
 
 openButton.forEach(cartIcon => {
   cartIcon.addEventListener("click", openModal);
