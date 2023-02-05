@@ -14,16 +14,19 @@ body {
 .cart {
   display: flex;
   width: 1050px;
-  height: 709px;
+  height: 100%;
   margin: 156px 435px 80px;
   justify-content: space-between;
 }
 
 .cartList {
+  /* display: flex;
+  flex-direction: column; */
   width: 742px;
   height: 100%;
 }
 
+/************* cartList 헤더 *************/
 .cartList__checkBox {
   display: flex;
   width: 100%;
@@ -73,11 +76,13 @@ body {
   font-size: var(--text-16);
 }
 
+/************* cartList 헤더 끝 *************/
+
 .cartList__body {
+  width: 100%;
+  height: 100%;
   font-weight: var(--semi-bold);
   font-size: var(--text-18);
-  width: 100%;
-  height: 180px;
 }
 
 .storage {
@@ -92,37 +97,29 @@ body {
   border-bottom: var(--gray-100) 1px solid;
 }
 
-.storage__name {
+.storage__cold,
+.storage__freeze,
+.storage__standard {
   display: flex;
   height: 30px;
 }
 
-.storage:nth-child(1) .storage__name:before {
+.storage__cold:before {
   content: url("../../assets/icons/drop.svg");
   padding-right: 8px;
 }
 
-.storage:nth-child(2) .storage__name:before {
+.storage__freeze:before {
   content: url("../../assets/icons/snow.svg");
   padding-right: 8px;
 }
 
-.storage:nth-child(3) .storage__name:before {
+.storage__standard:before {
   content: url("../../assets/icons/sun.svg");
   padding-right: 8px;
 }
 
-.storage__button {
-  display: flex;
-  align-items: center;
-  border: none;
-  background: var(--white);
-}
-
-.storage__button img {
-  transform: rotate(180deg);
-}
-
+/* 결제창 */
 .cradit {
   width: 284px;
   height: 709px;
