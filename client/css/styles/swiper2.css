@@ -103,13 +103,16 @@
 
 .products__button--prev {
   left: -25px;
-  background: url(/client/assets/icons/prevGroup.png) no-repeat;
+
+  background: url(../../assets/icons/prevGroup.png) no-repeat;
+
   background-position: center;
 }
 
 .products__button--next {
   right: -25px;
-  background: url(/client/assets/icons/nextGroup.png) no-repeat;
+  background: url(../../assets/icons/nextGroup.png) no-repeat;
+
   background-position: center;
 }
 
