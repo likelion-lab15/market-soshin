@@ -1,0 +1,105 @@
+.popUp {
+  /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23); */
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1100;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.popUp__overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.popUp__content {
+  position: relative;
+  top: 0px;
+  width: 500px;
+  height: 370px;
+  padding: 30px;
+  text-align: center;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.hidden {
+  display: none;
+}
+
+.popUp__product--name {
+  display: flex;
+  /* padding-bottom: 10px; */
+}
+
+.product__name {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+}
+.popUp__product--count {
+  display: flex;
+  margin: 28px 0;
+  justify-content: space-between;
+  padding-bottom: 30px;
+}
+.popUp__product--total {
+  display: flex;
+  justify-content: space-between;
+}
+.total--count {
+  font-size: 16px;
+  font-weight: 600;
+}
+.total--price {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28.43px;
+  line-height: 140%;
+}
+
+.popUp__product--benefit {
+  text-align: right;
+  padding-top: 10px;
+}
+
+.benefit--save {
+  padding: 0 8px;
+  color: white;
+  background-color: #fa622f;
+  border-radius: 1px;
+  margin-right: 8px;
+}
+.benefit--explain {
+  font-size: 14px;
+}
+.popUp__button--container {
+  display: flex;
+  margin: 20px 20px 54px 20px;
+  padding: 10px 35px;
+  justify-content: space-between;
+}
+#closePopup {
+  padding: 20px 60px;
+  border: 1px solid #898989;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+}
+#putCart {
+  /* padding: auto auto; */
+  color: white;
+  padding: 20px 30px;
+  background-color: #5f0080;
+  border-radius: 5px;
+}
