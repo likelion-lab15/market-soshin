@@ -3,7 +3,32 @@
 // import { mainBannerSwiper, mainTopSwiper } from "./swiper/index.js";
 // import { getData } from "./common/index.js";
 
-const url = "http://localhost:3000/products";
+import { getData } from './common/index.js';
+
+getData().then(datas => {
+  datas.forEach(data => {
+    const {id, name, description, price, salePrice, saleRatio, stock } = data;
+    console.log(id);
+  })
+});
+
+/* const url = "http://localhost:3000/products";
+
+// async, await + fetch
+export async function init() {
+  const response = await fetch(url);
+  const jsonArray = await response.json();
+  //데이터 배열인 jsonArray 반환
+  // console.log(jsonArray);
+  return jsonArray;
+} */
+
+// init().then(function(resolve) {
+//   resolve.forEach((item) => {
+//     console.log(item);
+//   })
+// })
+
 
 //fetch 방법
 // fetch(url)
@@ -13,16 +38,6 @@ const url = "http://localhost:3000/products";
 //       console.log(item);
 //     });
 //   });
-
-// async, await + fetch
-async function init() {
-  const response = await fetch(url);
-  const jsonArray = await response.json();
-  //데이터 배열인 jsonArray 반환
-  return jsonArray;
-}
-
-init();
 
 // const xhr = new XMLHttpRequest();
 // xhr.open("GET", url);
