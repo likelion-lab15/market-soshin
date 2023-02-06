@@ -12,6 +12,7 @@ import {
   insertCartModal,
 } from "./common/index.js";
 
+
 const productName = document.querySelector(".product__name");
 const productDiscountPrice = document.querySelector(".product__discountPrice");
 const productPrice = document.querySelector(".product__price");
@@ -31,3 +32,4 @@ openButton.forEach(cartIcon => {
 
 putBtn.addEventListener("click", putModal);
 closeBtn.addEventListener("click", closeModal);
+
