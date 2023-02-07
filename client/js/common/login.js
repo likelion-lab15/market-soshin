@@ -35,3 +35,7 @@ const popUp = document.querySelector(".popUp");
 export const openModal = () => {
 	popUp.classList.remove("hidden");
 };
+
+export const closeModal = () => {
+  popUp.classList.add("hidden");
+};

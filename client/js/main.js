@@ -1,39 +1,21 @@
 
-import { openModal } from "./common/login.js";
+import { closeModal, openModal } from "./common/login.js";
 
 const id = document.getElementById('loginId')
 const password = document.getElementById('loginPw')
 const loginBtn = document.querySelector('.loginComplete__login')
+const checkBtn = document.querySelector('.popUp__product--button')
 
-loginBtn.addEventListener('click', () => {
+loginBtn.addEventListener('click', (e) => {
+  e.preventDefault();
 	if(id.value === 'hyunzsu' && password.value === '0000') {
-		location.href('main.html')
+    location.replace('../index.html')
 	}
 	else {
-		// alert('아이디, 비밀번호를 확인해주세요.')
-    const openButton = document.querySelector('.loginComplete__login')
-    console.log(openButton);
     const popUp = document.querySelector(".popUp");
     console.log(popUp);
-
-    
-    openButton.addEventListener('click', openModal);
+    openModal();
 	}
 })
 
-/* const openButton = document.querySelector(".loginComplete__login");
-const popUp = document.querySelector(".popUp");
-
-const openModal = () => {
-  popUp.classList.remove("hidden");
-};
-const closeModal = () => {
-  popUp.classList.add("hidden");
-};
-const putModal = () => {
-  popUp.classList.add("hidden");
-};
-putBtn.addEventListener("click", putModal);
-closeBtn.addEventListener("click", closeModal);
-openButton.addEventListener("click", openModal); */
-
+checkBtn.addEventListener('click', closeModal)
