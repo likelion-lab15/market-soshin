@@ -199,3 +199,197 @@
   font-weight: var(--bold);
   border-radius: 4px;
 }
+
+/* --------상품 문의 CSS 시작-------- */
+
+/* 문의 + 후기 묶음 */
+.review {
+  display: flex;
+  flex-direction: column;
+  /* align-items: flex-start; */
+  padding: 0px;
+  gap: 72px;
+  width: 1050px;
+
+  height: 2014px;
+  border: 1px skyblue solid;
+}
+
+/* 상품 후기 */
+.productReview {
+  width: 1050px;
+  height: 888px;
+  border: 1px pink solid;
+}
+
+.text li::before {
+  content: "•";
+  padding: 0px 5px;
+}
+
+.text h4 {
+  color: var(--content);
+  font-weight: var(--bold);
+  font-size: var(--text-16);
+  padding-bottom: 5px;
+}
+
+.review__title {
+  /* border: 1px blue solid; */
+  width: 1050px;
+  height: 200px;
+  position: relative;
+}
+
+/* 상품 문의 */
+.productInquiry {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  gap: 56px;
+
+  width: 1050px;
+  height: 1054px;
+  /* border: 1px violet solid; */
+}
+
+.inquiry__title {
+  /* border: 1px blue solid; */
+  width: 1050px;
+  height: 100px;
+  position: relative;
+}
+
+.faq {
+  width: 750px;
+}
+
+.table__body {
+  font-weight: var(--bold);
+  color: var(--content);
+}
+
+th {
+  border-width: 2px 0px 1px 0px;
+  border-style: solid;
+  border-color: #000000;
+  border-collapse: collapse;
+  height: 58px;
+  /* border: 1px pink solid; */
+  /* display: flex; */
+  vertical-align: middle;
+  font-size: var(--text-l6);
+  font-weight: var(--bold);
+}
+
+tbody td {
+  text-align: center;
+  width: 100px;
+  height: 58px;
+  vertical-align: middle;
+  /* padding-top: 20px; */
+  /* border: 1px greenyellow solid; */
+  color: var(--gray-400);
+}
+
+.faq__container {
+  padding-left: 20px;
+}
+
+.faq__title {
+  text-align: left;
+  color: var(--content);
+}
+
+.date {
+  color: var(--gray-400);
+}
+
+.question,
+.answer {
+  text-align: left;
+  font-size: var(--text-12);
+  font-weight: var(--bold);
+  color: var(--content);
+  padding: 20px;
+}
+.questionAnswer {
+  background-color: var(--gray-50);
+}
+
+.questionAnswer.active {
+  display: none;
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  /* border: 1px orange solid; */
+}
+
+.question::before {
+  display: inline-block;
+  content: "";
+  padding-right: 38px;
+  width: 28px;
+  height: 24px;
+  background: url("../../assets/icons/Question.svg") no-repeat;
+}
+
+.answer {
+  display: flex;
+  /* align-items: center; */
+  /* border: 1px orange solid; */
+}
+
+.answer::before {
+  display: inline-block;
+  content: "";
+  padding-right: 38px;
+  width: 28px;
+  height: 24px;
+  background: url("../../assets/icons/Answer.svg") no-repeat;
+}
+
+.faq__answer {
+  border: 1px yellow solid;
+}
+
+.secret {
+  color: var(--gray-400);
+}
+
+.secret::after {
+  display: inline-block;
+  content: "";
+  width: 12px;
+  margin-left: 8px;
+  height: 14px;
+  background: url("../../assets/icons/Lock.svg") no-repeat;
+}
+
+.text h3 {
+  font-size: 28px;
+  font-weight: var(--extra-bold);
+  margin-bottom: 20px;
+}
+
+.text li {
+  font-size: var(--text-12);
+  font-weight: var(--bold);
+  color: var(--gray-500);
+}
+
+.inqury__button {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+.review__button {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+/* --------상품 문의 CSS 끝-------- */
