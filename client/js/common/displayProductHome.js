@@ -2,7 +2,7 @@ import { getJsonData } from './getJSONData.js';
 
 const mainProduct = document.querySelectorAll(".products__wrapper");
 
-export const templates = () => getJsonData().then(datas => {
+export const displayProductHome = () => getJsonData().then(datas => {
   datas.map(data => {
     let name = data.name;
     let thumbnail = data.image.thumbnail;
@@ -48,8 +48,7 @@ export const templates = () => getJsonData().then(datas => {
           />
         </button>
       </div>
-      
-    `;
+      `;
     }
   
     function insert(load, num) {

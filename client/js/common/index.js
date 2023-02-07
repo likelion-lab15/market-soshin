@@ -1,3 +1,2 @@
-export * from "./swiper.js";
-export * from "./template.js";
+export * from "./displayProductHome.js";
 export * from "./getJsonData.js";
