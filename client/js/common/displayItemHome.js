@@ -1,8 +1,8 @@
-import { getJsonData } from './getJSONData.js';
+import { getJsonData } from './getJsonData.js';
 
 const mainProduct = document.querySelectorAll(".products__wrapper");
 
-export const displayProductHome = () => getJsonData().then(datas => {
+export const displayItemHome = () => getJsonData().then(datas => {
   datas.map(data => {
     let name = data.name;
     let thumbnail = data.image.thumbnail;

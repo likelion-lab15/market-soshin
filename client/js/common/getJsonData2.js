@@ -2,7 +2,7 @@
 const url = "http://localhost:3000/products";
 
 //JSON 문자열을 객체로 반환해준다
-export async function getJsonData() {
+export async function getJsonData2() {
   const response = await fetch(url);
   const jsonArray = await response.json();
   return jsonArray;
