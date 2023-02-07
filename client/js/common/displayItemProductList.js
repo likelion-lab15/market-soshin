@@ -2,12 +2,14 @@ import { getJsonData } from './getJsonData.js';
 
 //제품리스트 컨테이너
 const productListItemWrapper = document.querySelector('.productList__itemWrapper');
+const discountP = document.querySelector('.productListItem__discount');
+const originalP = document.querySelector('.productListItem__original');
+const labels = document.querySelector('.labels'); 
 
 //제품리스트 동적으로 추가하기
 export const displayItemProductList = () => getJsonData().then(datas => {
         datas.map(data => {
             let name = data.name;
-            let price = data.price;
             let alt = data.image.alt;
             let view = data.image.view;
             let originalPrice  = data.price;
@@ -25,14 +27,16 @@ export const displayItemProductList = () => getJsonData().then(datas => {
                     <h3 class="productListItem__name">${name}</h3>
                     <div class="productListItem__priceWrapper">
                         <div class="price__priceWrapper">
-                            <span class="productListItem__discount">${saleRatio + "%"}</span>
-                            <span class="productListItem__price">${salePrice + " 원"}</span>
+                            <span class="productListItem__discount">${saleRatio ? saleRatio + "%" : ''}</span>
+                            <span class="productListItem__price">${saleRatio ? salePrice + " 원" : originalPrice + ' 원'}</span>
                         </div>
-                        <span class="productListItem__originalPrice">${originalPrice}원</span>
+                        <span class="productListItem__originalPrice productListItem--hidden">${saleRatio ? originalPrice + ' 원' : ''}</span>
                         <p class="productListItem__info">유명산지에서 전하는 제철 딸기</p>
-                    </div>
-                        <span class="productListItem__label">Karly Only</span>
-                        <span class="productListItem__label">한정수량</span>
+                        </div>
+                        <div class="labels">
+                            <span class="productListItem__label">Karly Only</span>
+                            <span class="productListItem__label">한정수량</span>
+                        </div>
                     </div>
 
                 

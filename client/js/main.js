@@ -6,3 +6,7 @@ displayItemHome();
 
 //ProductList 페이지 동적추가
 displayItemProductList();
+
+const salePoint = document.querySelector('.productListItem__discount');
+
+// if()

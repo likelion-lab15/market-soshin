@@ -214,12 +214,17 @@
 
 .productListItem__discount {
   color: var(--accent-yellow);
-  margin-right: 8px;
+}
+
+.productListItem__priceWrapper {
+  position: relative;
 }
 
 .productListItem__originalPrice {
   display: inline-block;
   margin-bottom: 8px;
+  text-decoration: line-through;
+  color: var(--gray-400);
 }
 
 .productListItem__label {
@@ -296,4 +301,8 @@
 .productListItemPagination__button--next {
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.productListItem--hidden {
+  display: none;
 }
