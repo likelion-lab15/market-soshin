@@ -77,25 +77,13 @@ if (e.target === productStandard) {
   } */
 
 
-const cartButton = document.querySelector(".cartList__body");
+const cartButton = document.querySelector(".cartList__product");
 const minus = document.querySelector('.quantity__minus')
 const result = document.querySelector('.quantity__result')
 const plus = document.querySelector('.quantity__plus')
 console.log(cartButton);
-console.log(minus);
 
 let i = 1;
-
-cartButton.addEventListener('click', (e) => {
-  let target = e.target;
-
-  if(target === plus) {
-    plusHandler();
-  } else if(target === minus) {
-    minusHandler();
-  } 
-
-})
 
 function plusHandler() {
   i++
@@ -116,3 +104,14 @@ function minusHandler() {
     minus.classList.remove('quantity__minus--change')
   }
 }
+
+cartButton.addEventListener('click', (e) => {
+  let target = e.target;
+
+  if(target === plus) {
+    plusHandler();
+  } else if(target === minus) {
+    minusHandler();
+  } 
+})
+
