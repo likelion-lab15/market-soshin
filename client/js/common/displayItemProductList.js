@@ -2,9 +2,6 @@ import { getJsonData } from './getJsonData.js';
 
 //제품리스트 컨테이너
 const productListItemWrapper = document.querySelector('.productList__itemWrapper');
-const discountP = document.querySelector('.productListItem__discount');
-const originalP = document.querySelector('.productListItem__original');
-const labels = document.querySelector('.labels'); 
 
 //제품리스트 동적으로 추가하기
 export const displayItemProductList = () => getJsonData().then(datas => {
@@ -30,7 +27,7 @@ export const displayItemProductList = () => getJsonData().then(datas => {
                             <span class="productListItem__discount">${saleRatio ? saleRatio + "%" : ''}</span>
                             <span class="productListItem__price">${saleRatio ? salePrice + " 원" : originalPrice + ' 원'}</span>
                         </div>
-                        <span class="productListItem__originalPrice productListItem--hidden">${saleRatio ? originalPrice + ' 원' : ''}</span>
+                        <span class="productListItem__originalPrice">${saleRatio ? originalPrice + ' 원' : ''}</span>
                         <p class="productListItem__info">유명산지에서 전하는 제철 딸기</p>
                         </div>
                         <div class="labels">
@@ -57,5 +54,12 @@ export const displayItemProductList = () => getJsonData().then(datas => {
             }
 
             insertItem(productListItemWrapper, createItemProductListTemplate(name, alt, salePercentage, discountPrice, originalPrice));
+
+            const originalP = document.querySelectorAll('.productListItem__originalPrice');        
+            originalP.forEach((item) => {
+                if(item.textContent === '') {
+                    item.classList.add('productListItem--hidden');
+                }
+            })
         })
     })
