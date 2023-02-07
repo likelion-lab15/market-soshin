@@ -47,10 +47,18 @@
   color: var(--info-error);
 }
 
+.register__green {
+  color: var(--primary);
+}
+
 .register__warning {
-  display: block;
+  display: none;
   font-size: var(--text-12);
   margin-top: 5px;
+}
+
+.register__warning.show {
+  display: block;
 }
 
 .register__inputStyle {
@@ -82,8 +90,16 @@
   outline: 1px solid var(--primary);
 }
 
+.register__checkBtn:disabled {
+  cursor: default;
+  border: none;
+  outline: 1px solid var(--gray-200);
+  color: var(--gray-200);
+}
+
 .register__addressBtn {
   width: 333px;
+  cursor: default;
 }
 
 .register__radio {
@@ -108,7 +124,7 @@
   appearance: none;
   width: 24px;
   height: 24px;
-  background-color: #white;
+  background-color: var(white);
   cursor: pointer;
   position: relative;
   border-radius: 50%;
@@ -245,4 +261,9 @@
   background-color: var(--primary);
   border: none;
   color: var(--white);
+}
+
+.register__submitBtn:disabled {
+  background-color: var(--gray-400);
+  cursor: default;
 }

@@ -10,7 +10,8 @@
     />
     <link rel="stylesheet" href="../css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/main.js" type="module"></script>
+    <script src="../js/main.js" type="module"></script>
+    <script src="../js/register.js" type="module"></script>
     <title>마켓라이언 - 회원가입</title>
   </head>
   <body>
@@ -20,7 +21,7 @@
         <p class="register__accent register__required">
           <sup class="register__essential">*</sup>필수입력사항
         </p>
-        <form action="/" method="post">
+        <form action="/" method="post" class="register__submitForm">
           <fieldset>
             <legend>회원가입</legend>
             <div class="register__input">
@@ -34,12 +35,22 @@
                   name="registerId"
                   id="registerId"
                   placeholder="아이디를 입력해주세요"
+                  maxlength="16"
                 />
-                <button type="button" class="register__checkBtn" tabindex="0">
+                <button
+                  id="idDuplicate"
+                  type="button"
+                  class="register__checkBtn"
+                  tabindex="0"
+                  disabled
+                >
                   중복확인
                 </button>
-                <span class="register__warning register__red"
+                <span id="idWarning" class="register__warning register__red"
                   >6자 이상 16자 이하의 영문 혹은 영문과 숫자를 조합</span
+                >
+                <span id="idAvailable" class="register__warning register__red"
+                  >사용 가능한 ID입니다</span
                 >
               </div>
             </div>
@@ -55,8 +66,8 @@
                   id="registerPassword"
                   placeholder="비밀번호를 입력해주세요"
                 />
-                <span class="register__warning register__red"
-                  >최소 10자 이상 입력</span
+                <span id="pwWarning" class="register__warning register__red"
+                  >최소 8자 이상 입력</span
                 >
               </div>
             </div>
@@ -72,7 +83,9 @@
                   id="registerCheckPassword"
                   placeholder="비밀번호를 한 번 더 입력해주세요"
                 />
-                <span class="register__warning register__red"
+                <span
+                  id="pwCheckWarning"
+                  class="register__warning register__red"
                   >동일한 비밀번호를 입력</span
                 >
               </div>
@@ -87,9 +100,9 @@
                   type="text"
                   name="registerName"
                   id="registerName"
-                  placeholder="이름을 한 번 더 입력해주세요"
+                  placeholder="이름을 입력해주세요"
                 />
-                <span class="register__warning register__red"
+                <span id="nameWarning" class="register__warning register__red"
                   >이름을 입력해주세요</span
                 >
               </div>
@@ -106,10 +119,15 @@
                   id="registerMail"
                   placeholder="예) marketkarly@karly.com"
                 />
-                <button type="button" class="register__checkBtn">
+                <button
+                  disabled
+                  id="mailDuplicate"
+                  type="button"
+                  class="register__checkBtn"
+                >
                   중복확인
                 </button>
-                <span class="register__warning register__red"
+                <span id="mailWarning" class="register__warning register__red"
                   >이메일 형식으로 입력해주세요</span
                 >
               </div>
@@ -126,10 +144,10 @@
                   id="registerNum"
                   placeholder="숫자만 입력해주세요."
                 />
-                <button type="button" class="register__checkBtn">
+                <button type="button" disabled class="register__checkBtn">
                   인증번호 받기
                 </button>
-                <span class="register__warning register__red"
+                <span id="numWarning" class="register__warning register__red"
                   >휴대폰 번호를 입력해주세요.</span
                 >
               </div>
@@ -160,6 +178,7 @@
                     type="radio"
                     name="gender"
                     id="registerMan"
+                    value="man"
                   />
                   <span aria-labelledby="registerMan" class="register__selected"
                     >남자</span
@@ -171,6 +190,7 @@
                     type="radio"
                     name="gender"
                     id="registerWoman"
+                    value="woman"
                   />
                   <span
                     aria-labelledby="registerWoman"
@@ -184,6 +204,7 @@
                     type="radio"
                     name="gender"
                     id="registerGenderNone"
+                    value="unknown"
                     checked
                   />
                   <span
@@ -275,7 +296,7 @@
                   <input
                     type="checkbox"
                     id="termsAll"
-                    name="terms"
+                    name="termsAll"
                     class="a11yHidden register__checkInput"
                   />
                   <svg
@@ -446,10 +467,14 @@
                 </label>
               </div>
             </div>
-            <button type="submit" class="register__submitBtn">가입하기</button>
           </fieldset>
+          <button type="button" class="register__submitBtn">가입하기</button>
         </form>
       </div>
     </main>
+
+    <div class="register__modal">
+      <div class="modal__container"></div>
+    </div>
   </body>
 </html>
