@@ -1,6 +1,6 @@
 import { getJsonData } from './getJSONData.js';
 
-export const mainProduct = document.querySelectorAll(".products__wrapper");
+const mainProduct = document.querySelectorAll(".products__wrapper");
 
 /* export const products = data.products.map(data => {
   let name = data.name;
@@ -61,7 +61,7 @@ export const mainProduct = document.querySelectorAll(".products__wrapper");
   for (let i = 0; i < mainProduct.length; i++) insert(mainProduct, i);
 }); */
 
-getJsonData().then(datas => {
+export const templates = () => getJsonData().then(datas => {
   datas.map(data => {
     let name = data.name;
     let thumbnail = data.image.thumbnail;
