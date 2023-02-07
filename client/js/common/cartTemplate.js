@@ -22,7 +22,13 @@ export function cartTemplateMaking(name, salePrice, originalPrice) {
           >${originalPrice}</span
         >
       </div>
-      <div>수량설정버튼</div>
+      <div class="productCount">
+        <div class="quantity">
+          <button class="quantity__minus" disabled></button>
+          <span class="quantity__result">1</span>
+          <button class="quantity__plus"></button>
+        </div>
+      </div>
     </div>
 
     <div class="popUp__product--total">
