@@ -77,26 +77,25 @@ if (e.target === productStandard) {
   } */
 
 
-const cartButton = document.querySelector(".cartList__product");
-const minus = document.querySelector('.quantity__minus')
-const result = document.querySelector('.quantity__result')
-const plus = document.querySelector('.quantity__plus')
-console.log(cartButton);
+const cartButton = document.querySelectorAll(".cartList__product");
+const minus = document.querySelectorAll('.quantity__minus')
+const result = document.querySelectorAll('.quantity__result')
+const plus = document.querySelectorAll('.quantity__plus')
 
-let i = 1;
+let resultNumber = 1;
 
 function plusHandler() {
-  i++
-  result.textContent = i;
+  resultNumber++
+  result.textContent = resultNumber;
   minus.disabled = false;
   minus.classList.add('quantity__minus--change')
 }
 
 function minusHandler() {
-  if (i > 1) {
-    i--
-    result.textContent = i;
-    if (i == 1) {
+  if (resultNumber > 1) {
+    resultNumber--
+    result.textContent = resultNumber;
+    if (resultNumber == 1) {
       minus.classList.remove('quantity__minus--change')
     }
   } else {
@@ -105,13 +104,15 @@ function minusHandler() {
   }
 }
 
-cartButton.addEventListener('click', (e) => {
-  let target = e.target;
-
-  if(target === plus) {
-    plusHandler();
-  } else if(target === minus) {
-    minusHandler();
-  } 
+cartButton.forEach(item => {
+  item.addEventListener('click', (e) => {
+    let target = e.target;
+    console.log(target);
+  
+    if(target === plus) {
+      plusHandler();
+    } else if(target === minus) {
+      minusHandler();
+    } 
+  })
 })
-
