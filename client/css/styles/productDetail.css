@@ -234,13 +234,106 @@
   padding-bottom: 5px;
 }
 
+/* ------------------------------------------------------------------------------------ */
+
 .review__title {
-  /* border: 1px blue solid; */
+  border: 1px blue solid;
   width: 1050px;
   height: 200px;
   position: relative;
 }
 
+.review__total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 885px;
+
+  width: 1050px;
+  height: 24px;
+  border: 1px pink solid;
+}
+
+.total__text {
+  border: 1px salmon solid;
+}
+.recentWrite {
+  border: 1px salmon solid;
+}
+
+.review__body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+
+  width: 1050px;
+  height: 690px;
+  /* border: 1px blue solid; */
+}
+
+.review__body tr td {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px var(--gray-100) solid;
+  border-collapse: collapse;
+  padding: 20px;
+  width: 1050px;
+  height: 154px;
+}
+
+.review__writer {
+  width: 130px;
+  /* border: 1px red solid; */
+  margin-right: 82px;
+}
+
+.review__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  font-size: var(--text-12);
+  font-weight: var(--bold);
+
+  width: 800px;
+  height: 114px;
+  /* border: 1px blue solid; */
+}
+
+.review__text {
+  color: #000000;
+}
+
+.review__writer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.writer {
+  display: block;
+  font-size: var(--text-12);
+  font-weight: var(--bold);
+  color: #000000;
+  line-height: 12px;
+  margin-top: 3px;
+}
+
+.bestBadge {
+  width: 48px;
+  height: 18px;
+}
+
+.Badge {
+  width: 37px;
+  height: 18px;
+}
+/* ------------------------------------------------------------------------------------ */
 /* 상품 문의 */
 .productInquiry {
   display: flex;
