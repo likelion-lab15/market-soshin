@@ -27,7 +27,12 @@ body {
 }
 
 /************* cartList 헤더 *************/
-.cartList__checkBox {
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.cartList__checkbox {
   display: flex;
   width: 100%;
   height: 60px;
@@ -39,7 +44,7 @@ body {
   font-size: var(--text-14);
 }
 
-.cartList__checkBox label {
+.cartList__checkbox label {
   display: flex;
   width: 130px;
   height: 24px;
@@ -50,12 +55,8 @@ body {
   background-repeat: no-repeat;
 }
 
-.cartList__checkBox span {
+.cartList__checkbox span {
   padding-right: 5px;
-}
-
-.cartList__checkBox input[type="checkbox"] {
-  display: none;
 }
 
 .cartList__clear::before {
