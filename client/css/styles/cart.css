@@ -19,6 +19,12 @@ body {
   justify-content: space-between;
 }
 
+.realtitle {
+  border: 1px solid pink;
+  width: 1000px;
+  height: 40px;
+}
+
 .cartList {
   /* display: flex;
   flex-direction: column; */
