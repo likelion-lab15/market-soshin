@@ -1,7 +1,10 @@
-import { getNode, tiger, removeClass } from "../lib/index.js";
+import { getNode, tiger, removeClass, addClass } from "../lib/index.js";
 
 const loginInputId = getNode("#loginId");
 const loginInputPW = getNode("#loginPw");
+
+const loginModal = getNode(".loginPopUp");
+const loginModalClose = getNode(".loginPopUp__product--button");
 
 const URL = "http://localhost:3000/users";
 
@@ -28,5 +31,14 @@ const checkLogin = async () => {
     removeClass(".loginPopUp", "hidden");
   }
 };
+
+const closeLoginModal = e => {
+  if (e.target === e.currentTarget) {
+    addClass(".loginPopUp", "hidden");
+  }
+};
+
+loginModal.addEventListener("click", closeLoginModal);
+loginModalClose.addEventListener("click", closeLoginModal);
 
 loginBtn.addEventListener("click", checkLogin);
