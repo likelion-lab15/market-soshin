@@ -40,7 +40,19 @@
   .hidden {
     display: none;
   }
-  
+  .popUp__product--container{
+    display: flex;
+    gap: 24px;
+  }
+  .popUp__product--tangtang{
+    width: 72px;
+    height: 72px;
+  }
+  .popUp__Product--tangtangTitle{
+    align-items: center;
+  }
+
+
   .popUp__productDetail--title-container{
     display: flex;
     height: 44px;
