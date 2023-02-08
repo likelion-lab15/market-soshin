@@ -13,9 +13,7 @@ const openPopUp=document.querySelector(".products");
 const productName = document.querySelector(".product__name");
 const productDiscountPrice = document.querySelector(".product__discountPrice");
 const productPrice = document.querySelector(".product__price");
-// const popUp = document.querySelector(".popUp");
 
-console.log(openPopUp)
 cartTemplateMaking(productName, productDiscountPrice, productPrice);
 insertCartModal(popUp)
 
@@ -33,13 +31,6 @@ function putModal() {
 
 const putBtn = popUp.querySelector("#putCart");
 const closeBtn = popUp.querySelector("#closePopup");
-// const openButton = openPopUp.querySelector("#open");
-
-console.log(openPopUp)
-/* openButton.forEach(cartIcon => {
-  cartIcon.addEventListener("click", openModal);
-}); */
-
 
 openPopUp.addEventListener("click", openModal);
 putBtn.addEventListener("click", putModal);
