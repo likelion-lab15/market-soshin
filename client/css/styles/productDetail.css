@@ -1,3 +1,4 @@
+
 body {
   display: flex;
   flex-direction: column;
@@ -6,52 +7,239 @@ body {
   font-style: normal;
 }
 
-.header {
-  width: 100%;
-  height: 197px;
-  border: salmon 2px solid;
-}
-
-.product {
+.productDetail {
   width: 1050px;
-  height: 6752px;
+  margin: 40px auto 96px auto;
 }
 
-.product__detail {
-  height: 1021px;
-  margin-top: 40px;
+.productDetail__info {
+  display: flex;
+  gap: 90px;
 }
 
+.product__img {
+  height: auto;
+  max-width: 400px;
+}
+
+.product__img img {
+  width: 100%;
+}
+
+.productDetail__info {
+  margin-bottom: 48px;
+}
+
+.productInfo {
+  width: calc(100% - 490px);
+}
+
+.productInfo__tag {
+  display: block;
+  margin: 0 0 16px 0;
+  color: var(--gray-500);
+  font-weight: var(--extra-bold);
+}
+
+.productInfo__name {
+  font-size: 28px;
+  font-weight: var(--bold);
+  margin-bottom: 0 0 4px 0;
+  line-height: 42px;
+}
+
+.productInfo__explanation {
+  color: var(--gray-400);
+  line-height: 42px;
+}
+
+.productInfo__price {
+  display: flex;
+  margin: 16px 0;
+  font-size: 28px;
+  font-weight: var(--bold);
+  align-items: center;
+}
+
+.productInfo__won {
+  font-size: var(--text-l6);
+  font-weight: var(--extra-bold);
+  margin-left: 4px;
+}
+
+.productInfo__save {
+  margin: 0 0 20px 0;
+  color: var(--primary);
+  font-weight: var(--bold);
+}
+
+.productInfo__categoryList {
+  display: flex;
+  padding: 16px 4px;
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.productInfo__categoryList:first-child {
+  border-top: 1px solid var(--gray-100);
+}
+
+.productInfo__category {
+  width: 128px;
+  color: var(--gray-500);
+  font-weight: var(--bold);
+  flex-shrink: 0;
+}
+
+.productInfo__txt {
+  display: flex;
+  color: var(--gray-500);
+  font-weight: var(--bold);
+  line-height: 18px;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.productInfo__subTxt {
+  display: block;
+  color: var(--gray-400);
+}
+
+.productInfo__subTxt.lighter {
+  color: var(--gray-500);
+  font-weight: var(--regular);
+}
+
+.productInfo__amount {
+  display: flex;
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--gray-100);
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.productInfo__amount .productInfo__txt {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.amount__box {
+  display: flex;
+  width: 84px;
+  height: 30px;
+  padding: 3px 0;
+  border: 1px solid var(--gray-100);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.amount__btn {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border: none;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  background-color: transparent;
+}
+
+.amount__box--price {
+  font-size: var(--text-12);
+  font-weight: var(--bold);
+}
+
+.product__price {
+  margin: 28px 0;
+  text-align: right;
+}
+
+.product__totalAmount {
+  display: flex;
+  font-weight: var(--bold);
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.product__totalAmountNum {
+  margin: 0 4px 0 17px;
+  font-size: 28px;
+}
+
+.product__saving {
+  display: flex;
+  margin: 8px 0 0 0;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: var(--bold);
+}
+
+.product__savingTag {
+  padding: 4px 8px;
+  background: var(--accent-yellow);
+  color: var(--white);
+  font-size: var(--text-10);
+  border-radius: 12px;
+  margin-right: 6px;
+}
+
+.productInfo__cart {
+  display: flex;
+  gap: 12px;
+}
+
+.productInfo__btn {
+  width: 56px;
+  height: 56px;
+  border: none;
+  border: 1px solid var(--gray-100);
+  outline: none;
+  background-color: transparent;
+  border-radius: 4px;
+}
+
+.productInfo__cartBtn {
+  border: none;
+  color: var(--white);
+  outline: none;
+  background-color: transparent;
+  flex-grow: 1;
+  background-color: var(--primary);
+  font-weight: var(--bold);
+  border-radius: 4px;
+}
+
+/* 지수 시작 */
 .product__navigation {
   height: 102px;
   margin-top: 48px;
-  /* border: 1px solid skyblue; */
 }
 
 .navigation__list {
   display: flex;
-  height: 60px;
   position: sticky;
+  height: 60px;
 }
 
 .navigation__item {
   display: flex;
+  border: 1px solid var(--gray-100);
+  background: #F9F9F9;
   justify-content: center;
   align-items: center;
   flex: 1 1 0;
-  border: 1px solid var(--gray-100);
-  background: #F9F9F9;
 }
 
 .navigation__item a {
+  color: var(--content);
   text-decoration: none;
   font-weight: var(--semi-bold);
-  color: var(--content);
 }
 
 .navigation__item .navigation__count {
+  color: rgb(153, 153, 153);
   margin-left: 4px;
   font-size: var(--text-14);
   font-weight: var(--regular);
-  color: rgb(153, 153, 153);
 }
+/* 지수 끝 */

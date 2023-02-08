@@ -1,21 +1,187 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./js/main.js" type="module"></script>
-  <title>마켓라이언 - 제품상세설명</title>
-</head>
-<body>
-  <header class="header"></header>
-  <main>
-    <article class="product">
-      <section class="product__detail"></section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/main.js" type="module"></script>
+    <title>마켓라이언 - 제품상세설명</title>
+  </head>
+  <body>
+    <header></header>
+    <main class="productDetail">
+      <section class="productDetail__info">
+        <h2 class="a11yHidden">제품 상세 페이지 - 탱탱쫄면</h2>
+        <div class="product__img">
+          <img
+            src="../assets/tangtang/thumbnail.jpg"
+            alt="탱탱쫄면 상품 이미지"
+          />
+        </div>
+        <div class="productInfo">
+          <span class="productInfo__tag">샛별배송</span>
+          <h3 class="productInfo__name">[풀무원] 탱탱쫄면 (4개입)</h3>
+          <p class="productInfo__explanation">튀기지 않아 부담 없는 매콤함</p>
+          <h4 class="productInfo__price">
+            4,980<span class="productInfo__won">원</span>
+          </h4>
+          <p class="productInfo__save">로그인 후, 적립 혜택이 제공됩니다.</p>
+          <ul>
+            <li class="productInfo__categoryList">
+              <span class="productInfo__category">배송</span>
+              <p class="productInfo__txt">
+                샛별배송
+                <span class="productInfo__subTxt"
+                  >23시 전 주문 시 내일 아침 7시 전 도착</span
+                >
+                <span class="productInfo__subTxt"
+                  >(대구 부산 울산 샛별배송 운영시간, 별도 확인)</span
+                >
+              </p>
+            </li>
+            <li class="productInfo__categoryList">
+              <span class="productInfo__category">판매자</span>
+              <p class="productInfo__txt">컬리</p>
+            </li>
+            <li class="productInfo__categoryList">
+              <span class="productInfo__category">포장타입</span>
+              <p class="productInfo__txt">
+                상온 (종이포장)
+                <span class="productInfo__subTxt"
+                  >택배배송은 에코 포장이 스티로폼으로 대체됩니다.</span
+                >
+              </p>
+            </li>
+            <li class="productInfo__categoryList">
+              <span class="productInfo__category">판매단위</span>
+              <p class="productInfo__txt">1분</p>
+            </li>
+            <li class="productInfo__categoryList">
+              <span class="productInfo__category">중량/용량</span>
+              <p class="productInfo__txt">123g*4봉</p>
+            </li>
+            <li class="productInfo__categoryList">
+              <span class="productInfo__category">원산지</span>
+              <p class="productInfo__txt">상세페이지 별도표기</p>
+            </li>
+            <li class="productInfo__categoryList">
+              <span class="productInfo__category">중량/용량</span>
+              <p class="productInfo__txt">
+                <span class="productInfo__subTxt lighter"
+                  >-대두, 밀, 쇠고기 함유
+                </span>
+                <span class="productInfo__subTxt lighter">
+                  -계란, 우유, 메밀, 땅콩, 고등어, 게, 돼지고기, 새우, 복숭아,
+                  토마토, 아황산류, 호두, 잣, 닭고기, 오징어, 조개류(굴, 전복,
+                  홍합 포함)를 사용한 제품과 같은 제조시설에서 제조
+                </span>
+              </p>
+            </li>
+            <li class="productInfo__categoryList">
+              <span class="productInfo__category">상품선택</span>
+              <div class="productInfo__amount">
+                <p class="productInfo__txt">[풀무원] 탱탱쫄면 (4개입)</p>
+                <div class="amount__box">
+                  <button type="button" class="amount__btn minus">
+                    <svg
+                      width="10"
+                      height="2"
+                      viewBox="0 0 10 2"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path d="M10 0V2H0V0H10Z" fill="#A6A6A6" />
+                    </svg>
+                    <span class="a11yHidden">수량 빼기 버튼</span>
+                  </button>
+
+                  <span>1</span>
+                  <button type="button" class="amount__btn plus">
+                    <svg
+                      width="10"
+                      height="10"
+                      viewBox="0 0 10 10"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 0V4H10V6H6V10H4V6H0V4H4V0H6Z"
+                        fill="#333333"
+                      />
+                    </svg>
+                    <span class="a11yHidden">수량 더하기 버튼</span>
+                  </button>
+                </div>
+                <p class="amount__box--price">4,980<span>원</span></p>
+              </div>
+            </li>
+          </ul>
+          <div class="product__price">
+            <p class="product__totalAmount">
+              총 상품금액: <span class="product__totalAmountNum">4,980</span>원
+            </p>
+            <p class="product__saving">
+              <span class="product__savingTag">적립</span> 로그인 후, 적립 혜택
+              제공
+            </p>
+          </div>
+          <div class="productInfo__cart">
+            <button type="button" class="productInfo__btn productInfo__like">
+              <span class="a11yHidden">좋아요 버튼</span>
+              <svg
+                width="28"
+                height="24"
+                viewBox="0 0 28 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24.9269 2.89301C24.3269 2.29267 23.6146 1.81642 22.8305 1.4915C22.0465 1.16657 21.2061 0.999329 20.3574 0.999329C19.5086 0.999329 18.6682 1.16657 17.8842 1.4915C17.1001 1.81642 16.3878 2.29267 15.7879 2.89301L13.9589 4.72101L12.1319 2.89301C10.9201 1.68097 9.27646 0.999948 7.56257 0.999761C5.84867 0.999573 4.2049 1.68024 2.99286 2.89201C1.78082 4.10378 1.0998 5.74741 1.09961 7.4613C1.09942 9.1752 1.78008 10.819 2.99186 12.031L4.81986 13.86L13.2519 22.294C13.4394 22.4815 13.6937 22.5868 13.9589 22.5868C14.224 22.5868 14.4783 22.4815 14.6659 22.294L23.0989 13.86L24.9269 12.032C25.5271 11.4321 26.0032 10.7198 26.328 9.93586C26.6528 9.15189 26.82 8.31161 26.82 7.46301C26.82 6.61441 26.6528 5.77413 26.328 4.99016C26.0032 4.2062 25.5271 3.49392 24.9269 2.89401V2.89301Z"
+                  stroke="#5F0080"
+                  stroke-width="1.7"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+            <button type="button" class="productInfo__btn productInfo__alert">
+              <span class="a11yHidden">재입고 알림 버튼</span>
+              <svg
+                width="26"
+                height="27"
+                viewBox="0 0 26 27"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.24902 21.875C9.24902 22.8695 9.64407 23.8232 10.3473 24.5264C11.0505 25.2296 12.0042 25.6246 12.9986 25.6246C13.9931 25.6246 14.9468 25.2296 15.65 24.5264C16.3532 23.8232 16.7483 22.8695 16.7483 21.875"
+                  stroke="#E1E1E1"
+                  stroke-width="1.6"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M24.2477 21.5803H1.75L1.76463 21.5465C1.85013 21.3946 2.2945 20.7545 3.09887 19.6239L3.94262 18.4426V10.9783C3.94262 5.93262 7.81037 1.82075 12.6512 1.63175L13 1.625C18.0018 1.625 22.0562 5.81225 22.0562 10.9783V18.4415L23.9766 21.1539C24.1712 21.4385 24.2624 21.5814 24.2489 21.5814L24.2477 21.5803Z"
+                  stroke="#E1E1E1"
+                  stroke-width="1.6"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <button type="button" class="productInfo__cartBtn">
+              장바구니 담기
+            </button>
+          </div>
+        </div>
+      </section>
       <nav class="product__navigation">
         <ul class="navigation__list">
           <li class="navigation__item"><a href="#"><span>상품설명</span></a></li>
@@ -33,8 +199,8 @@
       <section class="product__detail"> 
         <img src="../assets/imgs/_Detail.svg" alt="" />
       </section>
-    </article>
-  </main>
-  <footer></footer>
-</body>
+    </main>
+    <footer></footer>
+  </body>
 </html>
+>>>>>>> c0121ffc7d5b6e3f4584fdf197016acdfdc366ac
