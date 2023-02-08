@@ -220,6 +220,7 @@
   width: 1050px;
   height: 888px;
   border: 1px pink solid;
+  margin-bottom: 50px;
 }
 
 .text li::before {
@@ -237,7 +238,7 @@
 /* ------------------------------------------------------------------------------------ */
 
 .review__title {
-  border: 1px blue solid;
+  /* border: 1px blue solid; */
   width: 1050px;
   height: 200px;
   position: relative;
@@ -248,19 +249,51 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px;
-  gap: 885px;
+  padding: 0px 0px 16px;
+  gap: 870px;
 
   width: 1050px;
   height: 24px;
-  border: 1px pink solid;
+  /* border: 1px pink solid; */
 }
 
 .total__text {
-  border: 1px salmon solid;
+  font-size: var(--text-12);
+  font-weight: var(--bold);
+  color: var(--content);
+  /* border: 1px salmon solid; */
 }
 .recentWrite {
-  border: 1px salmon solid;
+  display: flex;
+  width: 130px;
+  justify-content: space-between;
+  font-size: var(--text-16);
+  font-weight: var(--bold);
+  color: var(--content);
+  /* border: 1px salmon solid; */
+}
+
+.write {
+  color: var(--gray-300);
+}
+
+.review__head th {
+  display: flex;
+  flex-direction: row;
+  line-height: 55px;
+  border-bottom: 1px var(--gray-100) solid;
+  border-collapse: collapse;
+}
+
+.notification {
+  font-size: var(--text-12);
+  font-weight: var(--bold);
+  width: 37px;
+  height: 18px;
+  background: var(--gray-100);
+  border-radius: 1px;
+  line-height: 18px;
+  margin: 20px;
 }
 
 .review__body {
@@ -270,7 +303,6 @@
   padding: 0px;
 
   width: 1050px;
-  height: 690px;
   /* border: 1px blue solid; */
 }
 
@@ -362,8 +394,22 @@
   color: var(--content);
 }
 
+.review__head {
+  border-width: 2px 0px 0px;
+  border-style: solid;
+  border-color: #000000;
+  border-collapse: collapse;
+}
+
+.table__head {
+  border-width: 2px 0px 0px;
+  border-style: solid;
+  border-color: #000000;
+  border-collapse: collapse;
+}
+
 th {
-  border-width: 2px 0px 1px 0px;
+  border-width: 0px 0px 1px;
   border-style: solid;
   border-color: #000000;
   border-collapse: collapse;
@@ -392,6 +438,12 @@ tbody td {
 .faq__title {
   text-align: left;
   color: var(--content);
+}
+
+.faqList,
+.questionAnswer {
+  border-bottom: 1px var(--gray-100) solid;
+  border-collapse: collapse;
 }
 
 .date {
@@ -486,3 +538,11 @@ tbody td {
 }
 
 /* --------상품 문의 CSS 끝-------- */
+
+.prevNext {
+  width: 128px;
+  height: 56px;
+  margin: 0 auto;
+  margin-top: 20px;
+  background: url(../../assets/icons/prev&next.svg) no-repeat;
+}
