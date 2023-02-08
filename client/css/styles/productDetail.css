@@ -1,3 +1,11 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Pretendard";
+  font-style: normal;
+}
+
 .productDetail {
   width: 1050px;
   margin: 40px auto 96px auto;
@@ -212,14 +220,14 @@
   width: 1050px;
 
   height: 2014px;
-  border: 1px skyblue solid;
+  /* border: 1px skyblue solid; */
 }
 
 /* 상품 후기 */
 .productReview {
   width: 1050px;
   height: 888px;
-  border: 1px pink solid;
+  /* border: 1px pink solid; */
   margin-bottom: 50px;
 }
 
@@ -656,3 +664,38 @@ tbody td {
   background-color: #e1e1e1;
   border-radius: 5px;
 }
+
+/* 지수 시작 */
+.product__navigation {
+  height: 102px;
+  margin-top: 48px;
+}
+
+.navigation__list {
+  display: flex;
+  position: sticky;
+  height: 60px;
+}
+
+.navigation__item {
+  display: flex;
+  border: 1px solid var(--gray-100);
+  background: #f9f9f9;
+  justify-content: center;
+  align-items: center;
+  flex: 1 1 0;
+}
+
+.navigation__item a {
+  color: var(--content);
+  text-decoration: none;
+  font-weight: var(--semi-bold);
+}
+
+.navigation__item .navigation__count {
+  color: rgb(153, 153, 153);
+  margin-left: 4px;
+  font-size: var(--text-14);
+  font-weight: var(--regular);
+}
+/* 지수 끝 */
