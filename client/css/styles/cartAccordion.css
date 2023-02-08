@@ -1,0 +1,89 @@
+/* 상품 리스트 추가 CSS */
+
+.cartList__product {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 118px;
+  padding: 20px 10px 20px 2px;
+  color: var(--content);
+  flex-direction: row;
+  align-items: center;
+  font-weight: var(--semi-bold);
+  font-size: var(--text-16);
+}
+
+.cartList__product input[type="checkbox"] {
+  display: none;
+}
+
+.cartList__product label {
+  display: flex;
+  width: 36px;
+  height: 24px;
+  justify-items: center;
+  align-items: center;
+  padding-left: 35px;
+  background-image: url(../../assets/icons/isChecked=false.svg);
+  background-repeat: no-repeat;
+}
+
+.productDetailtest {
+  margin-right: 20px;
+}
+
+.productImg {
+  display: block;
+  width: 60px;
+  height: 78px;
+  background-image: url("../../assets/jukkumi/thumbnail.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.productName {
+  margin-right: 20px;
+  width: 345px;
+  height: 40px;
+}
+
+.productName p {
+  font-size: 16px;
+  padding-top: 8px;
+}
+
+.productPrice {
+  font-size: 16px;
+  font-weight: var(--bold);
+  text-align: right;
+  width: 125px;
+  height: 22px;
+}
+
+.cartList__product > .cancelButton {
+  padding-right: 0px;
+}
+
+/* 상품 리스트 추가 CSS 끝 */
+
+.cancelButton,
+.accordionButton {
+  display: flex;
+  border: none;
+  background: var(--white);
+  align-items: center;
+}
+
+.accordionButton img {
+  size: 30px 30px;
+  transform: rotate(180deg);
+}
+
+.accordionButton.active {
+  transform: rotate(180deg);
+}
+
+.productInput.active {
+  display: none;
+}
