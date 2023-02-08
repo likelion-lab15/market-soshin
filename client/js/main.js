@@ -1,3 +1,12 @@
+import {
+  openModal__epilogue,
+  openModal__inquiry,
+  closeModal__epilogue,
+  closeModal__inquiry,
+  putModal__epilogue,
+  putModal__inquiry,
+} from "./common/index.js";
+
 // panel-faq-container
 const faqList = document.querySelectorAll(".faqList"); // NodeList 객체
 console.log(faqList);
@@ -14,12 +23,3 @@ for (let i = 0; i < faqList.length; i++) {
     questionAnswer[i].classList.toggle("active");
   });
 }
-
-/* 
-btnAllClose.addEventListener("click", function () {
-  // 버튼 클릭시 처리할 일
-  for (let i = 0; i < faq__body.length; i++) {
-    faq__body[i].classList.remove("active");
-  }
-});
- */
