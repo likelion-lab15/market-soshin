@@ -1,10 +1,12 @@
-export const addCart = document.querySelector(".popUp");
+export const popUp = document.querySelector(".popUp");
 
-const popUp = document.querySelector(".popUp");
-const productName = document.querySelector(".product__name");
-const productDiscountPrice = document.querySelector(".product__discountPrice");
-const productPrice = document.querySelector(".product__price");
 
+const productName = document.querySelectorAll(".product__name");
+const productDiscountPrice = document.querySelectorAll(".product__discountPrice");
+const productPrice = document.querySelectorAll(".product__price");
+
+
+console.log(productName)
 export function cartTemplateMaking(name, salePrice, originalPrice) {
   return `
   <div class="popUp__overlay">"</div>

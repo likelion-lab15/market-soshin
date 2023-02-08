@@ -8,7 +8,7 @@ import {
   insertCartModal,
   displayItemHome,
   popUp,
-  addCart
+
 } from "./common/index.js";
 
 displayItemHome()
