@@ -29,12 +29,16 @@
   }
   
   .productDetail__popUp--open{
+    position: absolute;
+    top:0%;
+    right: 0%;
     color: white;
     background-color: #5F0080;
     border: none;
     border-radius: 5px;
     width: 155px;
-  height: 44px;
+    height: 44px;
+
   }
   
   .hidden {
