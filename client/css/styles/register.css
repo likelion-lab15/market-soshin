@@ -1,0 +1,269 @@
+.register__main {
+  width: 640px;
+  margin: 80px auto 40px auto;
+}
+
+.register__title {
+  margin: 0 0 44px 0;
+  text-align: center;
+  font-size: var(--text-22);
+  font-weight: var(--bold);
+}
+
+.register__wrap {
+  position: relative;
+  border-top: 2px solid var(--content);
+}
+
+.register__accent {
+  font-weight: var(--bold);
+}
+
+.register__essential {
+  color: var(--accent-yellow);
+}
+
+.register__required {
+  position: absolute;
+  top: -22px;
+  right: 0;
+  font-size: var(--text-12);
+  font-weight: var(--bold);
+}
+
+.register__input {
+  display: flex;
+  padding: 20px 10px;
+}
+
+.register__label {
+  display: inline-block;
+  width: 139px;
+  font-weight: var(--bold);
+  padding: 10px 0 0 0;
+}
+
+.register__red {
+  color: var(--info-error);
+}
+
+.register__green {
+  color: var(--primary);
+}
+
+.register__warning {
+  display: none;
+  font-size: var(--text-12);
+  margin-top: 5px;
+}
+
+.register__warning.show {
+  display: block;
+}
+
+.register__inputStyle {
+  padding: 0 20px;
+  height: 44px;
+  width: 333px;
+  color: var(--gray-400);
+  outline: none;
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+}
+
+.register__inputStyle:focus {
+  border: 1px solid var(--content);
+}
+
+.register__checkBtn {
+  outline: none;
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  border-radius: 4px;
+  color: var(--primary);
+  font-weight: var(--bold);
+  height: 44px;
+  width: 143px;
+}
+
+.register__checkBtn:focus-visible {
+  outline: 1px solid var(--primary);
+}
+
+.register__checkBtn:disabled {
+  cursor: default;
+  border: none;
+  outline: 1px solid var(--gray-200);
+  color: var(--gray-200);
+}
+
+.register__addressBtn {
+  width: 333px;
+  cursor: default;
+}
+
+.register__radio {
+  width: 333px;
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.register__select {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 12px 0px 9px;
+  cursor: pointer;
+}
+
+.register__radioStyle {
+  vertical-align: middle;
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  background-color: var(white);
+  cursor: pointer;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid rgb(221, 221, 221);
+}
+
+.register__radioStyle:checked {
+  border: 7px solid var(--primary);
+}
+
+.register__radioStyle:focus-visible {
+  border: 1px solid var(--gray-500);
+}
+
+.register__selected {
+  position: relative;
+  font-size: 16px;
+  margin-left: 12px;
+}
+
+.register__birth {
+  align-items: center;
+  display: flex;
+  height: 44px;
+  border: 1px solid var(--gray-300);
+  border-radius: 4px;
+  width: 333px;
+  padding: 0 20px;
+}
+
+.register__inputContent {
+  width: 30%;
+}
+
+.register__birthInput {
+  border: none;
+  width: 100%;
+  text-align: center;
+}
+
+.register__birthInput:focus {
+  outline: none;
+  border: none;
+  color: var(--gray-400);
+}
+
+.register__terms {
+  display: flex;
+  padding: 20px 10px;
+  border-top: 1px solid var(--content);
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.register__labelCheck.check-all {
+  padding-top: 0;
+  margin-bottom: 8px;
+}
+
+.register__labelCheck {
+  position: relative;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  vertical-align: top;
+  line-height: normal;
+  color: rgb(51, 51, 51);
+  padding: 0px;
+  font-weight: var(--semi-bold);
+  font-size: var(--text-16);
+  cursor: pointer;
+  padding: 12px 0;
+}
+
+.register__checkInput:checked + .register__checkIcon {
+  fill: var(--primary);
+}
+
+.register__checkIcon {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.register__checkTerms {
+  width: calc(100% - 139px);
+}
+.register__textTermsDesc {
+  position: absolute;
+  bottom: -19px;
+  left: 0px;
+  color: var(--gray-400);
+  font-size: var(--text-14);
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: -0.4px;
+}
+
+.register__textCheckAll {
+  flex-grow: 1;
+  position: relative;
+  font-size: var(--text-20);
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.register__textCheck {
+  margin-right: auto;
+}
+
+.register__btnTerms {
+  position: relative;
+  border: 0;
+  color: var(--primary);
+  font-size: var(--text-sm);
+  background-color: transparent;
+}
+
+.register__btnTerms::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 5px;
+  height: 5px;
+  border: 1px solid var(--primary);
+  border-width: 1px 1px 0 0;
+  transform: rotate(45deg) translateY(-50%);
+}
+
+.register__submitBtn {
+  display: block;
+  width: 340px;
+  margin: 40px auto;
+  height: 54px;
+  background-color: var(--primary);
+  border: none;
+  color: var(--white);
+}
+
+.register__submitBtn:disabled {
+  background-color: var(--gray-400);
+  cursor: default;
+}

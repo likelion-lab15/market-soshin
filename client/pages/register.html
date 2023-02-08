@@ -1,19 +1,480 @@
 <!DOCTYPE html>
 <html lang="ko-KR">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./js/main.js" type="module"></script>
-  <title>마켓라이언 - 회원가입</title>
-</head>
-<body>
-  <header></header>
-  <main></main>
-  <footer></footer>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="../js/main.js" type="module"></script>
+    <script src="../js/register.js" type="module"></script>
+    <title>마켓라이언 - 회원가입</title>
+  </head>
+  <body>
+    <main class="register__main">
+      <h2 class="register__title">회원가입</h2>
+      <div class="register__wrap">
+        <p class="register__accent register__required">
+          <sup class="register__essential">*</sup>필수입력사항
+        </p>
+        <form action="/" method="post" class="register__submitForm">
+          <fieldset>
+            <legend>회원가입</legend>
+            <div class="register__input">
+              <label for="registerId" class="register__label"
+                >아이디<sup class="register__essential">*</sup></label
+              >
+              <div class="register__inputWrap">
+                <input
+                  class="register__inputStyle"
+                  type="text"
+                  name="registerId"
+                  id="registerId"
+                  placeholder="아이디를 입력해주세요"
+                  maxlength="16"
+                />
+                <button
+                  id="idDuplicate"
+                  type="button"
+                  class="register__checkBtn"
+                  tabindex="0"
+                  disabled
+                >
+                  중복확인
+                </button>
+                <span id="idWarning" class="register__warning register__red"
+                  >6자 이상 16자 이하의 영문 혹은 영문과 숫자를 조합</span
+                >
+                <span id="idAvailable" class="register__warning register__red"
+                  >사용 가능한 ID입니다</span
+                >
+              </div>
+            </div>
+            <div class="register__input">
+              <label for="registerPassword" class="register__label"
+                >비밀번호<sup class="register__essential">*</sup></label
+              >
+              <div class="register__inputWrap">
+                <input
+                  class="register__inputStyle"
+                  type="password"
+                  name="registerPassword"
+                  id="registerPassword"
+                  placeholder="비밀번호를 입력해주세요"
+                />
+                <span id="pwWarning" class="register__warning register__red"
+                  >최소 8자 이상 입력</span
+                >
+              </div>
+            </div>
+            <div class="register__input">
+              <label for="registerCheckPassword" class="register__label"
+                >비밀번호 확인<sup class="register__essential">*</sup></label
+              >
+              <div class="register__inputWrap">
+                <input
+                  class="register__inputStyle"
+                  type="password"
+                  name="registerCheckPassword"
+                  id="registerCheckPassword"
+                  placeholder="비밀번호를 한 번 더 입력해주세요"
+                />
+                <span
+                  id="pwCheckWarning"
+                  class="register__warning register__red"
+                  >동일한 비밀번호를 입력</span
+                >
+              </div>
+            </div>
+            <div class="register__input">
+              <label for="registerName" class="register__label"
+                >이름<sup class="register__essential">*</sup></label
+              >
+              <div class="register__inputWrap">
+                <input
+                  class="register__inputStyle"
+                  type="text"
+                  name="registerName"
+                  id="registerName"
+                  placeholder="이름을 입력해주세요"
+                />
+                <span id="nameWarning" class="register__warning register__red"
+                  >이름을 입력해주세요</span
+                >
+              </div>
+            </div>
+            <div class="register__input">
+              <label for="registerMail" class="register__label"
+                >이메일<sup class="register__essential">*</sup></label
+              >
+              <div class="register__inputWrap">
+                <input
+                  class="register__inputStyle"
+                  type="email"
+                  name="registerMail"
+                  id="registerMail"
+                  placeholder="예) marketkarly@karly.com"
+                />
+                <button
+                  disabled
+                  id="mailDuplicate"
+                  type="button"
+                  class="register__checkBtn"
+                >
+                  중복확인
+                </button>
+                <span id="mailWarning" class="register__warning register__red"
+                  >이메일 형식으로 입력해주세요</span
+                >
+              </div>
+            </div>
+            <div class="register__input">
+              <label for="registerNum" class="register__label"
+                >휴대폰<sup class="register__essential">*</sup></label
+              >
+              <div class="register__inputWrap">
+                <input
+                  class="register__inputStyle"
+                  type="text"
+                  name="registerNum"
+                  id="registerNum"
+                  placeholder="숫자만 입력해주세요."
+                />
+                <button type="button" disabled class="register__checkBtn">
+                  인증번호 받기
+                </button>
+                <span id="numWarning" class="register__warning register__red"
+                  >휴대폰 번호를 입력해주세요.</span
+                >
+              </div>
+            </div>
+
+            <div class="register__input">
+              <span class="register__label"
+                >주소<sup class="register__essential">*</sup></span
+              >
+              <div class="register__inputWrap">
+                <button
+                  class="register__checkBtn register__addressBtn"
+                  type="button"
+                >
+                  주소 검색
+                </button>
+                <span class="register__warning"
+                  >배송지에 따라 상품 정보가 달라질 수 있습니다.</span
+                >
+              </div>
+            </div>
+            <div class="register__input">
+              <span class="register__label">성별</span>
+              <div class="register__radio">
+                <label for="registerMan" class="register__select">
+                  <input
+                    class="register__radioStyle"
+                    type="radio"
+                    name="gender"
+                    id="registerMan"
+                    value="man"
+                  />
+                  <span aria-labelledby="registerMan" class="register__selected"
+                    >남자</span
+                  >
+                </label>
+                <label for="registerWoman" class="register__select">
+                  <input
+                    class="register__radioStyle"
+                    type="radio"
+                    name="gender"
+                    id="registerWoman"
+                    value="woman"
+                  />
+                  <span
+                    aria-labelledby="registerWoman"
+                    class="register__selected"
+                    >여자</span
+                  >
+                </label>
+                <label for="registerGenderNone" class="register__select">
+                  <input
+                    class="register__radioStyle"
+                    type="radio"
+                    name="gender"
+                    id="registerGenderNone"
+                    value="unknown"
+                    checked
+                  />
+                  <span
+                    aria-labelledby="registerGenderNone"
+                    class="register__selected"
+                    >선택안함</span
+                  >
+                </label>
+              </div>
+            </div>
+            <div class="register__input">
+              <span class="register__label">생년월일</span>
+              <div class="register__birth">
+                <div class="register__inputContent">
+                  <label for="registerInputYear" class="a11yHidden">year</label>
+                  <input
+                    class="register__birthInput"
+                    type="text"
+                    id="registerInputYear"
+                    maxlength="4"
+                    placeholder="YYYY"
+                  />
+                </div>
+                <span aria-hidden="true">/</span>
+                <div class="register__inputContent">
+                  <label for="registerInputMonth" class="a11yHidden"
+                    >month</label
+                  >
+                  <input
+                    class="register__birthInput"
+                    type="text"
+                    id="registerInputMonth"
+                    maxlength="2"
+                    placeholder="MM"
+                  />
+                </div>
+                <span aria-hidden="true">/</span>
+                <div class="register__inputContent">
+                  <label for="registerInputDay" class="a11yHidden">day</label>
+                  <input
+                    class="register__birthInput"
+                    type="text"
+                    placeholder="DD"
+                    maxlength="2"
+                    id="registerInputDay"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="register__input">
+              <span class="register__label">추가 입력사항</span>
+              <div class="register__radio">
+                <label for="registerFriend" class="register__select">
+                  <input
+                    class="register__radioStyle"
+                    type="radio"
+                    name="additional"
+                    id="registerFriend"
+                  />
+
+                  <span
+                    aria-labelledby="registerFriend"
+                    class="register__selected"
+                    >친구초대 추천인 아이디</span
+                  >
+                </label>
+                <label for="registerEvent" class="register__select">
+                  <input
+                    class="register__radioStyle"
+                    type="radio"
+                    name="additional"
+                    id="registerEvent"
+                  />
+
+                  <span
+                    aria-labelledby="registerEvent"
+                    class="register__selected"
+                    >참여 이벤트명</span
+                  >
+                </label>
+              </div>
+            </div>
+            <div class="register__terms">
+              <span class="register__label"
+                >이용약관동의<sup class="register__essential">*</sup></span
+              >
+              <div class="register__checkTerms">
+                <label for="termsAll" class="register__labelCheck check-all">
+                  <input
+                    type="checkbox"
+                    id="termsAll"
+                    name="termsAll"
+                    class="a11yHidden register__checkInput"
+                  />
+                  <svg
+                    class="register__checkIcon"
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 24C18.3513 24 23.5 18.8513 23.5 12.5C23.5 6.14873 18.3513 1 12 1C5.64873 1 0.5 6.14873 0.5 12.5C0.5 18.8513 5.64873 24 12 24Z"
+                      stroke="#C4C4C4"
+                    />
+                    <path
+                      d="M7 13.167L10.385 16.5L18 9"
+                      stroke="#C4C4C4"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <p aria-labelledby="termsAll" class="register__textCheckAll">
+                    전체 동의합니다.
+                    <span class="register__textTermsDesc"
+                      >선택항목에 동의하지 않은 경우도 회원가입 및 일반적인
+                      서비스를 이용할 수 있습니다.</span
+                    >
+                  </p>
+                </label>
+                <label for="terms1" class="register__labelCheck">
+                  <input
+                    type="checkbox"
+                    id="terms1"
+                    name="terms"
+                    class="a11yHidden register__checkInput"
+                  />
+                  <svg
+                    class="register__checkIcon"
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 24C18.3513 24 23.5 18.8513 23.5 12.5C23.5 6.14873 18.3513 1 12 1C5.64873 1 0.5 6.14873 0.5 12.5C0.5 18.8513 5.64873 24 12 24Z"
+                      stroke="#C4C4C4"
+                    />
+                    <path
+                      d="M7 13.167L10.385 16.5L18 9"
+                      stroke="#C4C4C4"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <span aria-labelledby="terms1" class="register__textCheck"
+                    >이용약관 동의 (필수)</span
+                  >
+                  <button type="button" class="register__btnTerms">
+                    약관보기
+                  </button>
+                </label>
+                <label for="terms2" class="register__labelCheck">
+                  <input
+                    type="checkbox"
+                    id="terms2"
+                    name="terms"
+                    class="a11yHidden register__checkInput"
+                  />
+                  <svg
+                    class="register__checkIcon"
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 24C18.3513 24 23.5 18.8513 23.5 12.5C23.5 6.14873 18.3513 1 12 1C5.64873 1 0.5 6.14873 0.5 12.5C0.5 18.8513 5.64873 24 12 24Z"
+                      stroke="#C4C4C4"
+                    />
+                    <path
+                      d="M7 13.167L10.385 16.5L18 9"
+                      stroke="#C4C4C4"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span aria-labelledby="terms2" class="register__textCheck"
+                    >개인정보 수집 · 이용 동의 (필수)</span
+                  >
+                  <button type="button" class="register__btnTerms">
+                    약관보기
+                  </button>
+                </label>
+                <label for="terms3" class="register__labelCheck">
+                  <input
+                    type="checkbox"
+                    id="terms3"
+                    name="terms"
+                    class="a11yHidden register__checkInput"
+                  />
+                  <svg
+                    class="register__checkIcon"
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 24C18.3513 24 23.5 18.8513 23.5 12.5C23.5 6.14873 18.3513 1 12 1C5.64873 1 0.5 6.14873 0.5 12.5C0.5 18.8513 5.64873 24 12 24Z"
+                      stroke="#C4C4C4"
+                    />
+                    <path
+                      d="M7 13.167L10.385 16.5L18 9"
+                      stroke="#C4C4C4"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span aria-labelledby="terms3" class="register__textCheck"
+                    >무료배송, 할인쿠폰 등 혜택/정보 수신 동의 (선택)</span
+                  >
+                  <button type="button" class="register__btnTerms">
+                    약관보기
+                  </button>
+                </label>
+                <label for="terms4" class="register__labelCheck">
+                  <input
+                    type="checkbox"
+                    id="terms4"
+                    name="terms"
+                    class="a11yHidden register__checkInput"
+                  />
+                  <svg
+                    class="register__checkIcon"
+                    width="24"
+                    height="25"
+                    viewBox="0 0 24 25"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M12 24C18.3513 24 23.5 18.8513 23.5 12.5C23.5 6.14873 18.3513 1 12 1C5.64873 1 0.5 6.14873 0.5 12.5C0.5 18.8513 5.64873 24 12 24Z"
+                      stroke="#C4C4C4"
+                    />
+                    <path
+                      d="M7 13.167L10.385 16.5L18 9"
+                      stroke="#C4C4C4"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span aria-labelledby="terms4" class="register__textCheck"
+                    >본인은 만 14세 이상입니다. (필수)</span
+                  >
+                  <button type="button" class="register__btnTerms">
+                    약관보기
+                  </button>
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <button type="button" class="register__submitBtn">가입하기</button>
+        </form>
+      </div>
+    </main>
+
+    <div class="register__modal">
+      <div class="modal__container"></div>
+    </div>
+  </body>
 </html>

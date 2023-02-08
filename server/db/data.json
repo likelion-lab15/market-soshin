@@ -128,5 +128,67 @@
       },
       "stock": 13
     }
+  ],
+  "users": [
+    {
+      "uniqueID": 1675777628561,
+      "id": "asdaffas",
+      "name": "sdfafaf",
+      "password": "12341234",
+      "email": "ucasda@aaaa.com",
+      "phone": "01000000000",
+      "gender": "ddd",
+      "birth": "unknown"
+    },
+    {
+      "uniqueID": 1675777721759,
+      "id": "asdaffa",
+      "name": "채하은",
+      "password": "12341234",
+      "email": "ucasda@aaaa.com",
+      "phone": "01014021321",
+      "gender": "ddd",
+      "birth": "unknown"
+    },
+    {
+      "uniqueID": 1675778521501,
+      "id": "dsfafasf",
+      "name": "채하은",
+      "password": "12341234",
+      "email": "ucasda@aaaa.com",
+      "phone": "01000000000",
+      "gender": "aaaa",
+      "birth": "19941111"
+    },
+    {
+      "uniqueID": 1675778822682,
+      "id": "asdasfasf",
+      "name": "채하은",
+      "password": "12341234",
+      "email": "ucasda@aaaa.com",
+      "phone": "0124546546",
+      "gender": "unknown",
+      "birth": "12341212"
+    },
+    {
+      "uniqueID": 1675780495594,
+      "id": "asadafaf",
+      "name": "채하은",
+      "password": "12341234",
+      "email": "ucasda@aaaa.com",
+      "phone": "01000000000",
+      "gender": "woman",
+      "birth": "19940321"
+    },
+    {
+      "uniqueID": 1675782203130,
+      "id": "asdsafs",
+      "name": "채하은",
+      "password": "12341234",
+      "email": "dasfaf@dsdfda.com",
+      "phone": "01041000000",
+      "gender": "man",
+      "birth": "20121211"
+    }
   ]
 }
