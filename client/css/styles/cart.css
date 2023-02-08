@@ -15,14 +15,18 @@ body {
   display: flex;
   width: 1050px;
   height: 100%;
-  margin: 156px 435px 80px;
+  margin: 30px 435px 80px;
   justify-content: space-between;
 }
 
-.realtitle {
-  border: 1px solid pink;
-  width: 1000px;
-  height: 40px;
+.cartTitle {
+  font-size: 21px;
+  font-weight: var(--bold);
+  margin: 0 auto;
+  /* border: 1px solid pink; */
+  width: 75px;
+  height: 32px;
+  margin-top: 50px;
 }
 
 .cartList {
@@ -132,7 +136,7 @@ input[type="checkbox"] {
   align-items: center;
   width: 84px;
   height: 30px;
-  border: 1px solid #C4C4C4;
+  border: 1px solid #c4c4c4;
 }
 
 .quantity__minus {
@@ -265,11 +269,10 @@ input[type="checkbox"] {
   display: none;
 }
 
-
 /* 결제창 */
 .cradit {
   width: 284px;
-  height: 709px;
+  /* height: 100%; */
 }
 
 .cradit__location {
@@ -382,4 +385,3 @@ input[type="checkbox"] {
   font-size: var(--text-12);
   line-height: 16px;
 }
-
