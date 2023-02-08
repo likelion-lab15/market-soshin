@@ -213,7 +213,7 @@ const submitBtnHandler = e => {
     };
 
     tiger.post(URL, data);
-    // location.replace("../index.html");
+    location.replace("../index.html");
   }
 };
 

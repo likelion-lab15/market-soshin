@@ -83,26 +83,6 @@
   ],
   "users": [
     {
-      "uniqueID": 5464231328487,
-      "userId": "aaa1234",
-      "name": "채하은",
-      "password": "12345",
-      "email": "ddddd@naver.com",
-      "phone": "01012341234",
-      "gender": "man",
-      "birth": "19940321"
-    },
-    {
-      "uniqueID": 112133255,
-      "id": "asdasfsaf",
-      "name": "채하은",
-      "password": "ㅁㄴㅇㅁㄴㄹ",
-      "email": "asdasf@naver.com",
-      "phone": "01041014442132",
-      "gender": "ddd",
-      "birth": "12345"
-    },
-    {
       "uniqueID": 1675777628561,
       "id": "asdaffas",
       "name": "sdfafaf",
