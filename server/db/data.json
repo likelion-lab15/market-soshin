@@ -81,4 +81,23 @@
       "stock": 13
     }
   ]
+},
+
+{
+  "users": [
+    {
+      "uniqueID": 5464231328487,
+      "ID": "aaa1234",
+      "name": "채하은",
+      "password": "12345",
+      "email": "ddddd@naver.com",
+      "phone": "01012341234",
+      "gender" : "man",
+      "birth": {
+        "year": 2022,
+        "month": 3,
+        "day": 15
+      }
+    }
+  ]
 }
