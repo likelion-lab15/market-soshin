@@ -15,6 +15,6 @@
 @import url(./styles/productDetail.css);
 @import url(./styles/productList.css);
 @import url(./styles/mainBannerSwiper.css);
-@import url(./styles/mainProductSwiper.css);
+@import url(../css/styles/mainPoductSwiper.css);
 @import url(./styles/popUp.css);
 @import url(./styles/recent.css);
