@@ -1,0 +1,311 @@
+.register__main {
+  width: 640px;
+  margin: 80px auto 40px auto;
+}
+
+.register__title {
+  margin: 0 0 44px 0;
+  text-align: center;
+  font-size: var(--text-22);
+  font-weight: var(--bold);
+}
+
+.register__wrap {
+  position: relative;
+  border-top: 2px solid var(--content);
+}
+
+.register__accent {
+  font-weight: var(--bold);
+}
+
+.register__essential {
+  color: var(--accent-yellow);
+}
+
+.register__required {
+  position: absolute;
+  top: -22px;
+  right: 0;
+  font-size: var(--text-12);
+  font-weight: var(--bold);
+}
+
+.register__input {
+  display: flex;
+  padding: 20px 10px;
+}
+
+.register__label {
+  display: inline-block;
+  width: 139px;
+  padding: 10px 0 0 0;
+  font-weight: var(--bold);
+}
+
+.register__red {
+  color: var(--info-error);
+}
+
+.register__green {
+  color: var(--primary);
+}
+
+.register__warning {
+  display: none;
+  font-size: var(--text-12);
+  margin-top: 5px;
+}
+
+.register__warning.show {
+  display: block;
+}
+
+.register__inputStyle {
+  width: 333px;
+  height: 44px;
+  padding: 0 20px;
+  border: 1px solid var(--gray-300);
+  color: var(--gray-400);
+  outline: none;
+  border-radius: 4px;
+}
+
+.register__inputStyle:focus {
+  border: 1px solid var(--content);
+}
+
+.register__checkBtn {
+  width: 143px;
+  height: 44px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+  outline: none;
+  background-color: transparent;
+  border-radius: 4px;
+  font-weight: var(--bold);
+}
+
+.register__checkBtn:focus-visible {
+  outline: 1px solid var(--primary);
+}
+
+.register__checkBtn:disabled {
+  border: none;
+  color: var(--gray-200);
+  cursor: default;
+  outline: 1px solid var(--gray-200);
+}
+
+.register__addressBtn {
+  width: 333px;
+  cursor: default;
+}
+
+.register__radio {
+  display: flex;
+  width: 333px;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.register__select {
+  display: flex;
+  position: relative;
+  padding: 12px 0px 9px;
+  -webkit-box-align: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.register__radioStyle {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 1px solid rgb(221, 221, 221);
+  vertical-align: middle;
+  appearance: none;
+  background-color: var(white);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.register__radioStyle:checked {
+  border: 7px solid var(--primary);
+}
+
+.register__radioStyle:focus-visible {
+  border: 1px solid var(--gray-500);
+}
+
+.register__selected {
+  position: relative;
+  font-size: 16px;
+  margin-left: 12px;
+}
+
+.register__birth {
+  display: flex;
+  width: 333px;
+  height: 44px;
+  padding: 0 20px;
+  border: 1px solid var(--gray-300);
+  align-items: center;
+  border-radius: 4px;
+}
+
+.register__inputContent {
+  width: 30%;
+}
+
+.register__birthInput {
+  width: 100%;
+  border: none;
+  text-align: center;
+}
+
+.register__birthInput:focus {
+  border: none;
+  color: var(--gray-400);
+  outline: none;
+}
+
+.register__terms {
+  display: flex;
+  padding: 20px 10px;
+  border-top: 1px solid var(--content);
+  border-bottom: 1px solid var(--gray-100);
+}
+
+.register__labelCheck.check-all {
+  padding-top: 0;
+  margin-bottom: 8px;
+}
+
+.register__labelCheck {
+  display: flex;
+  position: relative;
+  padding: 0px;
+  padding: 12px 0;
+  color: rgb(51, 51, 51);
+  -webkit-box-align: center;
+  align-items: center;
+  vertical-align: top;
+  line-height: normal;
+  font-weight: var(--semi-bold);
+  font-size: var(--text-16);
+  cursor: pointer;
+}
+
+.register__checkInput:checked + .register__checkIcon {
+  fill: var(--primary);
+}
+
+.register__checkIcon {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.register__checkTerms {
+  width: calc(100% - 139px);
+}
+.register__textTermsDesc {
+  position: absolute;
+  bottom: -19px;
+  left: 0px;
+  color: var(--gray-400);
+  letter-spacing: -0.4px;
+  font-size: var(--text-14);
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.register__textCheckAll {
+  position: relative;
+  flex-grow: 1;
+  font-size: var(--text-20);
+  line-height: 32px;
+  font-weight: 700;
+}
+
+.register__textCheck {
+  margin-right: auto;
+}
+
+.register__btnTerms {
+  position: relative;
+  border: 0;
+  color: var(--primary);
+  font-size: var(--text-sm);
+  background-color: transparent;
+}
+
+.register__btnTerms::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 5px;
+  height: 5px;
+  border: 1px solid var(--primary);
+  content: "";
+  border-width: 1px 1px 0 0;
+  transform: rotate(45deg) translateY(-50%);
+}
+
+.register__submitBtn {
+  display: block;
+  width: 340px;
+  height: 54px;
+  margin: 40px auto;
+  border: none;
+  color: var(--white);
+  background-color: var(--primary);
+}
+
+.register__submitBtn:disabled {
+  background-color: var(--gray-400);
+  cursor: default;
+}
+
+.register__modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.register__modal.show {
+  display: block;
+}
+
+.register__modalContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+  border-radius: 10px;
+  font-weight: var(--bold);
+}
+
+.register__modalText {
+  padding: 40px 40px;
+}
+
+.register__modalBtn {
+  width: 100%;
+  padding: 20px 0;
+  border: none;
+  background: transparent;
+  color: var(--primary);
+  outline: 0;
+  border-top: 1px solid var(--gray-100);
+  font-weight: var(--bold);
+}

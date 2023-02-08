@@ -1,0 +1,48 @@
+.quantity {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 84px;
+  height: 30px;
+  border: 1px solid #C4C4C4;
+}
+
+.quantity__minus {
+  width: 28px;
+  height: 28px;
+  border: none;
+  font-size: 1px;
+  color: transparent;
+  background-size: cover;
+  background-color: transparent;
+  background-image: url(../../assets/icons/quantity_false.svg);
+}
+
+.quantity__minus--change {
+  width: 28px;
+  height: 28px;
+  border: none;
+  font-size: 1px;
+  color: transparent;
+  background-size: cover;
+  background-color: transparent;
+  background-image: url(../../assets/icons/quantity__false__black.svg);
+}
+
+.quantity__result {
+  width: 8px;
+  height: 24px;
+  border: 0;
+  padding-top: 7px;
+}
+
+.quantity__plus {
+  width: 28px;
+  height: 28px;
+  border: none;
+  font-size: 1px;
+  color: transparent;
+  background-size: cover;
+  background-color: transparent;
+  background-image: url(../../assets/icons/quantity_true.svg);
+}

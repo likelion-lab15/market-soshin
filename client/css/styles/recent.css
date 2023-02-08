@@ -1,0 +1,9 @@
+.main__recent{
+    display: flex;
+    justify-content: flex-end;
+    position: sticky;
+    top: 200px;
+    margin-right: 40px;
+
+
+}
