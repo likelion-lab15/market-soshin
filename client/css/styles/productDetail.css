@@ -1021,6 +1021,7 @@ a {
 
 .footer {
   border-top: var(--gray-100) 1px solid;
+  width: 100%;
 }
 
 .footer__top {
