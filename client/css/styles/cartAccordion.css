@@ -11,7 +11,6 @@
   align-items: center;
   font-weight: var(--semi-bold);
   font-size: var(--text-16);
-  /* border: lightcoral 1px solid; */
 }
 
 .cartList__product input[type="checkbox"] {
@@ -47,18 +46,11 @@
   margin-right: 20px;
   width: 345px;
   height: 40px;
-  /* border: lightpink 1px solid; */
 }
 
 .productName p {
   font-size: 16px;
   padding-top: 8px;
-}
-
-.productCount {
-  width: 86px;
-  height: 28px;
-  border: lightsalmon 1px solid;
 }
 
 .productPrice {
@@ -67,7 +59,6 @@
   text-align: right;
   width: 125px;
   height: 22px;
-  /* border: lightgreen 1px solid; */
 }
 
 .cartList__product > .cancelButton {
@@ -88,10 +79,6 @@
   size: 30px 30px;
   transform: rotate(180deg);
 }
-
-/* .storage.active {
-  background: var(--gray-100);
-} */
 
 .accordionButton.active {
   transform: rotate(180deg);
