@@ -1,15 +1,15 @@
 import {
 
 
-  cartTemplateMaking,
+/*   cartTemplateMaking,
   insertCartModal,
-  displayItemHome,
-  popUp,
+  popUp, */
+  displayItemHome
 
 } from "./common/index.js";
 
 displayItemHome()
-const openPopUp=document.querySelector(".products");
+/* const openPopUp=document.querySelector(".products");
 const productName = document.querySelector(".product__name");
 const productDiscountPrice = document.querySelector(".product__discountPrice");
 const productPrice = document.querySelector(".product__price");
@@ -35,4 +35,4 @@ const closeBtn = popUp.querySelector("#closePopup");
 openPopUp.addEventListener("click", openModal);
 putBtn.addEventListener("click", putModal);
 closeBtn.addEventListener("click", closeModal);
-
+ */
