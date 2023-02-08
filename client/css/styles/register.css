@@ -39,8 +39,8 @@
 .register__label {
   display: inline-block;
   width: 139px;
-  font-weight: var(--bold);
   padding: 10px 0 0 0;
+  font-weight: var(--bold);
 }
 
 .register__red {
@@ -62,12 +62,12 @@
 }
 
 .register__inputStyle {
-  padding: 0 20px;
-  height: 44px;
   width: 333px;
+  height: 44px;
+  padding: 0 20px;
+  border: 1px solid var(--gray-300);
   color: var(--gray-400);
   outline: none;
-  border: 1px solid var(--gray-300);
   border-radius: 4px;
 }
 
@@ -76,14 +76,14 @@
 }
 
 .register__checkBtn {
+  width: 143px;
+  height: 44px;
+  border: 1px solid var(--primary);
+  color: var(--primary);
   outline: none;
   background-color: transparent;
-  border: 1px solid var(--primary);
   border-radius: 4px;
-  color: var(--primary);
   font-weight: var(--bold);
-  height: 44px;
-  width: 143px;
 }
 
 .register__checkBtn:focus-visible {
@@ -91,10 +91,10 @@
 }
 
 .register__checkBtn:disabled {
-  cursor: default;
   border: none;
-  outline: 1px solid var(--gray-200);
   color: var(--gray-200);
+  cursor: default;
+  outline: 1px solid var(--gray-200);
 }
 
 .register__addressBtn {
@@ -103,32 +103,32 @@
 }
 
 .register__radio {
-  width: 333px;
   display: flex;
+  width: 333px;
   -webkit-box-pack: justify;
   justify-content: space-between;
   flex-direction: row;
 }
 
 .register__select {
-  position: relative;
   display: flex;
+  position: relative;
+  padding: 12px 0px 9px;
   -webkit-box-align: center;
   align-items: center;
-  padding: 12px 0px 9px;
   cursor: pointer;
 }
 
 .register__radioStyle {
-  vertical-align: middle;
-  appearance: none;
+  position: relative;
   width: 24px;
   height: 24px;
+  border: 1px solid rgb(221, 221, 221);
+  vertical-align: middle;
+  appearance: none;
   background-color: var(white);
   cursor: pointer;
-  position: relative;
   border-radius: 50%;
-  border: 1px solid rgb(221, 221, 221);
 }
 
 .register__radioStyle:checked {
@@ -146,13 +146,13 @@
 }
 
 .register__birth {
-  align-items: center;
   display: flex;
-  height: 44px;
-  border: 1px solid var(--gray-300);
-  border-radius: 4px;
   width: 333px;
+  height: 44px;
   padding: 0 20px;
+  border: 1px solid var(--gray-300);
+  align-items: center;
+  border-radius: 4px;
 }
 
 .register__inputContent {
@@ -160,15 +160,15 @@
 }
 
 .register__birthInput {
-  border: none;
   width: 100%;
+  border: none;
   text-align: center;
 }
 
 .register__birthInput:focus {
-  outline: none;
   border: none;
   color: var(--gray-400);
+  outline: none;
 }
 
 .register__terms {
@@ -184,18 +184,18 @@
 }
 
 .register__labelCheck {
-  position: relative;
   display: flex;
+  position: relative;
+  padding: 0px;
+  padding: 12px 0;
+  color: rgb(51, 51, 51);
   -webkit-box-align: center;
   align-items: center;
   vertical-align: top;
   line-height: normal;
-  color: rgb(51, 51, 51);
-  padding: 0px;
   font-weight: var(--semi-bold);
   font-size: var(--text-16);
   cursor: pointer;
-  padding: 12px 0;
 }
 
 .register__checkInput:checked + .register__checkIcon {
@@ -215,15 +215,15 @@
   bottom: -19px;
   left: 0px;
   color: var(--gray-400);
+  letter-spacing: -0.4px;
   font-size: var(--text-14);
   font-weight: 400;
   line-height: 19px;
-  letter-spacing: -0.4px;
 }
 
 .register__textCheckAll {
-  flex-grow: 1;
   position: relative;
+  flex-grow: 1;
   font-size: var(--text-20);
   line-height: 32px;
   font-weight: 700;
@@ -242,13 +242,13 @@
 }
 
 .register__btnTerms::after {
-  content: "";
   position: absolute;
   top: 50%;
   right: 0;
   width: 5px;
   height: 5px;
   border: 1px solid var(--primary);
+  content: "";
   border-width: 1px 1px 0 0;
   transform: rotate(45deg) translateY(-50%);
 }
@@ -256,11 +256,11 @@
 .register__submitBtn {
   display: block;
   width: 340px;
-  margin: 40px auto;
   height: 54px;
-  background-color: var(--primary);
+  margin: 40px auto;
   border: none;
   color: var(--white);
+  background-color: var(--primary);
 }
 
 .register__submitBtn:disabled {
@@ -268,44 +268,44 @@
   cursor: default;
 }
 
-.register__modal{
+.register__modal {
+  display: none;
   position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999999;
   width: 100%;
   height: 100%;
-  left: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999999;
-  top:0;
-  display: none;
 }
 
-.register__modal.show{
+.register__modal.show {
   display: block;
 }
 
-.register__modalContainer{
+.register__modalContainer {
   position: absolute;
-  left: 50%;
   top: 50%;
-  transform: translate(-50%, -50%);
+  left: 50%;
   width: 350px;
+  text-align: center;
+  transform: translate(-50%, -50%);
   background-color: var(--white);
   border-radius: 10px;
-  text-align: center;
   font-weight: var(--bold);
 }
 
-.register__modalText{
+.register__modalText {
   padding: 40px 40px;
 }
 
-.register__modalBtn{
-  padding: 20px 0;
+.register__modalBtn {
   width: 100%;
-  outline: 0;
-  background: transparent;
+  padding: 20px 0;
   border: none;
-  border-top:1px solid var(--gray-100);
+  background: transparent;
+  color: var(--primary);
+  outline: 0;
+  border-top: 1px solid var(--gray-100);
   font-weight: var(--bold);
-  color:var(--primary);
 }
