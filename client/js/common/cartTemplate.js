@@ -10,16 +10,16 @@ export function cartTemplateMaking(name, salePrice, originalPrice) {
   <div class="popUp__overlay">"</div>
   <div class="popUp__content">
     <div class="popUp__product--name">
-      <span class="product__name">${name}</span>
+      <span class="product__name">[대구 반할만떡] 유부호만두</span>
     </div>
 
     <div class="popUp__product--count">
       <div>
         <span class="product__discountPrice"
-          >${salePrice}</span
+          >5,244 원</span
         >
         <span class="product__price"
-          >${originalPrice}</span
+          >6,900 원</span
         >
       </div>
       <div class="productCount">
@@ -34,7 +34,7 @@ export function cartTemplateMaking(name, salePrice, originalPrice) {
     <div class="popUp__product--total">
       <p class="total--count">합계</p>
       <p class="total--price">
-        ${salePrice}
+      5,244 원
       </p>
     </div>
     <div class="popUp__product--benefit">
