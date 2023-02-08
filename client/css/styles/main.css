@@ -60,7 +60,9 @@
   right: -13px;
   width: 8px;
   height: 10px;
+
   background: url(../../assets/icons/Vector.svg) 0 0 no-repeat;
+
   content: "";
 }
 

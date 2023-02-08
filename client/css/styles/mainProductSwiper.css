@@ -1,7 +1,9 @@
 .products {
   position: relative;
   width: 1050px;
+
   margin: 0 auto;
+  margin-bottom: 40px;
 }
 
 .products__title {
@@ -85,13 +87,16 @@
 
 .products__button--prev {
   left: -25px;
+
   background: url(../../assets/icons/prevGroup.png) no-repeat;
+
   background-position: center;
 }
 
 .products__button--next {
   right: -25px;
   background: url(../../assets/icons/nextGroup.png) no-repeat;
+
   background-position: center;
 }
 
