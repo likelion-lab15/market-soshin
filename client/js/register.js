@@ -10,6 +10,7 @@ import { gapIsValid } from "./common/index.js";
 
 let URL = "http://localhost:3000/users";
 
+// 인풋
 const inputID = getNode("#registerId");
 const inputPW = getNode("#registerPassword");
 const inputPWCheck = getNode("#registerCheckPassword");
@@ -17,10 +18,21 @@ const inputName = getNode("#registerName");
 const inputMail = getNode("#registerMail");
 const inputNum = getNode("#registerNum");
 
-const duplicateIDBtn = getNode("#idDuplicate");
-const duplicateMailBtn = getNode("#mailDuplicate");
+// 중복확인
+const checkAvailableID = getNode("#idDuplicate");
+const checkAvailableEmail = getNode("#mailDuplicate");
 
+// 모달
+const registerModal = getNode(".register__modal");
+const registerModalMessage = getNode(".register__modalText");
+const registerModalClose = getNode(".register__modalBtn");
+
+// 가입 버튼
 const submitBtn = getNode(".register__submitBtn");
+
+// 중복 확인 변수
+let AVAILABLE__ID = false;
+let AVAILABLE__EMAIL = false;
 
 // 숫자 정규표현식
 const check = /^[0-9]+$/;
@@ -28,32 +40,30 @@ const check = /^[0-9]+$/;
 // id 유효성 검사
 const idIsValid = () => {
   const userID = getInputValue("#registerId");
-
-  if (gapIsValid(userID)) {
-    // 6글자 미만이거나 영어나 숫자가 아니면 show 클래스를 보여주고 중복 확인 버튼을 못 누르게
-    if (userID.length < 6 || !/^[a-z|A-Z|0-9|]+$/.test(userID)) {
-      addClass("#idWarning", "show");
-      duplicateIDBtn.disabled = true;
-      return false;
-    } else {
-      removeClass("#idWarning", "show");
-      duplicateIDBtn.disabled = false;
-      return userID;
-    }
+  if (
+    userID.length < 6 ||
+    !/^[a-z|A-Z|0-9|]+$/.test(userID) ||
+    userID.trim() == ""
+  ) {
+    addClass("#idWarning", "show");
+    checkAvailableID.disabled = true;
+    return false;
+  } else if (gapIsValid(userID)) {
+    removeClass("#idWarning", "show");
+    checkAvailableID.disabled = false;
+    return userID;
   }
 };
 
 // pw 유효성 검사
 const pwIsValid = () => {
   const userPW = getInputValue("#registerPassword");
-  if (gapIsValid(userPW)) {
-    if (userPW.length < 8) {
-      addClass("#pwWarning", "show");
-      return false;
-    } else {
-      removeClass("#pwWarning", "show");
-      return userPW;
-    }
+  if (userPW.length < 8 || userPW.trim() === "") {
+    addClass("#pwWarning", "show");
+    return false;
+  } else if (gapIsValid(userPW)) {
+    removeClass("#pwWarning", "show");
+    return userPW;
   }
 };
 
@@ -89,19 +99,17 @@ const nameIsValid = () => {
 const mailIsValid = () => {
   const userMail = getInputValue("#registerMail");
 
-  if (gapIsValid(userMail)) {
-    // '@', '.' 포함 여부
-    if (userMail.includes("@") && userMail.includes(".")) {
-      removeClass("#mailWarning", "show");
-      // 포함하고 있으면 버튼 활성화
-      duplicateMailBtn.disabled = false;
-      return userMail;
-    } else {
-      addClass("#mailWarning", "show");
-      // 포함하지 않으면 버튼 비활성화
-      duplicateMailBtn.disabled = true;
-      return false;
-    }
+  // '@', '.' 포함 여부
+  if (userMail.includes("@") && userMail.includes(".")) {
+    removeClass("#mailWarning", "show");
+    // 포함하고 있으면 버튼 활성화
+    checkAvailableEmail.disabled = false;
+    return userMail;
+  } else if (gapIsValid(userMail)) {
+    addClass("#mailWarning", "show");
+    // 포함하지 않으면 버튼 비활성화
+    checkAvailableEmail.disabled = true;
+    return false;
   }
 };
 
@@ -109,14 +117,12 @@ const mailIsValid = () => {
 const numIsValid = () => {
   const userNum = getInputValue("#registerNum");
 
-  if (gapIsValid(userNum)) {
-    if (!check.test(userNum)) {
-      addClass("#numWarning", "show");
-      return false;
-    } else {
-      removeClass("#numWarning", "show");
-      return userNum;
-    }
+  if (!check.test(userNum) || userNum.trim() === "") {
+    addClass("#numWarning", "show");
+    return false;
+  } else if (gapIsValid(userNum)) {
+    removeClass("#numWarning", "show");
+    return userNum;
   }
 };
 
@@ -155,11 +161,53 @@ const checkTerms = () => {
   return terms1.checked && terms2.checked && terms4.checked ? true : false;
 };
 
+// 중복확인
+const checkId = async () => {
+  const userData = await tiger.get("http://localhost:3000/users");
+
+  const userID = userData.data.find(user => user.id === inputID.value);
+
+  if (userID) {
+    addClass(".register__modal", "show");
+    registerModalMessage.innerText = "이미 사용 중인 아이디입니다.";
+    AVAILABLE__ID = false;
+  } else {
+    addClass(".register__modal", "show");
+    registerModalMessage.innerText = "사용 가능한 아이디입니다.";
+    AVAILABLE__ID = true;
+  }
+};
+const checkEmail = async () => {
+  const userData = await tiger.get("http://localhost:3000/users");
+
+  const userEmail = userData.data.find(user => user.email === inputMail.value);
+
+  if (userEmail) {
+    addClass(".register__modal", "show");
+    registerModalMessage.innerText = "이미 사용 중인 이메일입니다.";
+    AVAILABLE__EMAIL = false;
+  } else {
+    addClass(".register__modal", "show");
+    registerModalMessage.innerText = "사용 가능한 이메일입니다.";
+    AVAILABLE__EMAIL = true;
+  }
+};
+
 // submit
 const submitBtnHandler = e => {
   e.preventDefault();
 
   const genderValue = getInputValue('input[name="gender"]:checked');
+
+  if (AVAILABLE__ID === false) {
+    addClass(".register__modal", "show");
+    registerModalMessage.innerText = "ID 중복 확인을 해주세요!";
+  }
+
+  if (AVAILABLE__EMAIL === false) {
+    addClass(".register__modal", "show");
+    registerModalMessage.innerText = "Email 중복 확인을 해주세요!";
+  }
 
   if (!numIsValid()) {
     inputNum.focus();
@@ -198,7 +246,24 @@ const submitBtnHandler = e => {
     pwCheck() &&
     pwIsValid() &&
     idIsValid() &&
-    checkTerms()
+    AVAILABLE__ID === true &&
+    AVAILABLE__EMAIL === true &&
+    !checkTerms()
+  ) {
+    addClass(".register__modal", "show");
+    registerModalMessage.innerText = "필수 이용 약관에 동의해주세요.";
+  }
+
+  if (
+    numIsValid() &&
+    mailIsValid() &&
+    nameIsValid() &&
+    pwCheck() &&
+    pwIsValid() &&
+    idIsValid() &&
+    checkTerms() &&
+    AVAILABLE__ID === true &&
+    AVAILABLE__EMAIL === true
   ) {
     const data = {
       // Date.now()를 활용해서 중복 없는 id값 생성
@@ -213,7 +278,13 @@ const submitBtnHandler = e => {
     };
 
     tiger.post(URL, data);
-    // location.replace("../index.html");
+    location.replace("../pages/login.html");
+  }
+};
+
+const closeRegiModal = e => {
+  if (e.target === e.currentTarget) {
+    removeClass(".register__modal", "show");
   }
 };
 
@@ -223,5 +294,11 @@ inputPWCheck.addEventListener("input", pwCheck);
 inputName.addEventListener("input", nameIsValid);
 inputMail.addEventListener("input", mailIsValid);
 inputNum.addEventListener("input", numIsValid);
+
+registerModal.addEventListener("click", closeRegiModal);
+registerModalClose.addEventListener("click", closeRegiModal);
+
+checkAvailableID.addEventListener("click", checkId);
+checkAvailableEmail.addEventListener("click", checkEmail);
 
 submitBtn.addEventListener("click", submitBtnHandler);

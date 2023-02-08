@@ -83,84 +83,34 @@
   ],
   "users": [
     {
-      "uniqueID": 5464231328487,
-      "userId": "aaa1234",
-      "name": "채하은",
-      "password": "12345",
-      "email": "ddddd@naver.com",
-      "phone": "01012341234",
-      "gender": "man",
-      "birth": "19940321"
-    },
-    {
-      "uniqueID": 112133255,
-      "id": "asdasfsaf",
-      "name": "채하은",
-      "password": "ㅁㄴㅇㅁㄴㄹ",
-      "email": "asdasf@naver.com",
-      "phone": "01041014442132",
-      "gender": "ddd",
-      "birth": "12345"
-    },
-    {
-      "uniqueID": 1675777628561,
-      "id": "asdaffas",
-      "name": "sdfafaf",
-      "password": "12341234",
-      "email": "ucasda@aaaa.com",
-      "phone": "01000000000",
-      "gender": "ddd",
-      "birth": "unknown"
-    },
-    {
-      "uniqueID": 1675777721759,
-      "id": "asdaffa",
-      "name": "채하은",
-      "password": "12341234",
-      "email": "ucasda@aaaa.com",
-      "phone": "01014021321",
-      "gender": "ddd",
-      "birth": "unknown"
-    },
-    {
-      "uniqueID": 1675778521501,
-      "id": "dsfafasf",
-      "name": "채하은",
-      "password": "12341234",
-      "email": "ucasda@aaaa.com",
-      "phone": "01000000000",
-      "gender": "aaaa",
-      "birth": "19941111"
-    },
-    {
-      "uniqueID": 1675778822682,
-      "id": "asdasfasf",
-      "name": "채하은",
-      "password": "12341234",
-      "email": "ucasda@aaaa.com",
-      "phone": "0124546546",
-      "gender": "unknown",
-      "birth": "12341212"
-    },
-    {
-      "uniqueID": 1675780495594,
-      "id": "asadafaf",
-      "name": "채하은",
-      "password": "12341234",
-      "email": "ucasda@aaaa.com",
-      "phone": "01000000000",
-      "gender": "woman",
-      "birth": "19940321"
-    },
-    {
       "uniqueID": 1675782203130,
       "id": "asdsafs",
       "name": "채하은",
       "password": "12341234",
       "email": "dasfaf@dsdfda.com",
       "phone": "01041000000",
-      "gender": "man",
+      "gender": "woman",
       "birth": "20121211"
+    },
+    {
+      "uniqueID": 1675864393627,
+      "id": "chaechae123",
+      "name": "채하은",
+      "password": "19940321",
+      "email": "asdf@naver.com",
+      "phone": "01012341234",
+      "gender": "woman",
+      "birth": "19940321"
+    },
+    {
+      "uniqueID": 1675865977163,
+      "id": "asdf0321",
+      "name": "채하은",
+      "password": "12345678",
+      "email": "aaaaa@naver.com",
+      "phone": "01012341234",
+      "gender": "woman",
+      "birth": "19990919"
     }
   ]
 }
