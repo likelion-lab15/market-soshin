@@ -267,3 +267,45 @@
   background-color: var(--gray-400);
   cursor: default;
 }
+
+.register__modal{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999999;
+  top:0;
+  display: none;
+}
+
+.register__modal.show{
+  display: block;
+}
+
+.register__modalContainer{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  background-color: var(--white);
+  border-radius: 10px;
+  text-align: center;
+  font-weight: var(--bold);
+}
+
+.register__modalText{
+  padding: 40px 40px;
+}
+
+.register__modalBtn{
+  padding: 20px 0;
+  width: 100%;
+  outline: 0;
+  background: transparent;
+  border: none;
+  border-top:1px solid var(--gray-100);
+  font-weight: var(--bold);
+  color:var(--primary);
+}
