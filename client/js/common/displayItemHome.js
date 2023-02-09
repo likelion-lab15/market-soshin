@@ -14,7 +14,7 @@ export const displayItemHome = () => getJsonData().then(datas => {
     function templateMaking(thumbnail, alt, name, saleRatio, salePrice2, price) {
       return `
       <div class="swiper-slide product">
-        <a href="#" class="product__link">
+        <a href="./pages/productDetail.html" class="product__link">
           <div class="product__imgContainer">
             <img class="product__img" src="../client/assets/${thumbnail}"
               alt="${alt}"

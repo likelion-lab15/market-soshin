@@ -15,7 +15,7 @@ export const displayItemProductList = () => getJsonData().then(datas => {
 
             function createItemProductListTemplate(name, alt, saleRatio, salePrice, originalPrice) {
                 return `
-                <a class="productListItem" href="#">
+                <a class="productListItem" href="./productDetail.html">
                     <div class="productListItem__imgWrapper">
                         <img class="productListItem__img" src="../assets/${view}" alt="${alt}" />
                     </div>
