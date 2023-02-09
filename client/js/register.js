@@ -8,6 +8,7 @@ import {
 } from "../lib/index.js";
 import { gapIsValid } from "./common/index.js";
 
+// json url
 let URL = "http://localhost:3000/users";
 
 // 인풋
@@ -17,29 +18,25 @@ const inputPWCheck = getNode("#registerCheckPassword");
 const inputName = getNode("#registerName");
 const inputMail = getNode("#registerMail");
 const inputNum = getNode("#registerNum");
-
 // 중복확인
 const checkAvailableID = getNode("#idDuplicate");
 const checkAvailableEmail = getNode("#mailDuplicate");
-
 // 모달
 const registerModal = getNode(".register__modal");
 const registerModalMessage = getNode(".register__modalText");
 const registerModalClose = getNode(".register__modalBtn");
-
 // 가입 버튼
 const submitBtn = getNode(".register__submitBtn");
-
-// 중복 확인 변수
+/* 2. 중복 확인 변수 */
 let AVAILABLE__ID = false;
 let AVAILABLE__EMAIL = false;
-
-// 숫자 정규표현식
+/* 3. 숫자 정규표현식 */
 const check = /^[0-9]+$/;
 
-// id 유효성 검사
+// id 유효성 검사 함수
 const idIsValid = () => {
   const userID = getInputValue("#registerId");
+
   if (
     userID.length < 6 ||
     !/^[a-z|A-Z|0-9|]+$/.test(userID) ||
@@ -58,6 +55,7 @@ const idIsValid = () => {
 // pw 유효성 검사
 const pwIsValid = () => {
   const userPW = getInputValue("#registerPassword");
+
   if (userPW.length < 8 || userPW.trim() === "") {
     addClass("#pwWarning", "show");
     return false;
@@ -86,7 +84,6 @@ const nameIsValid = () => {
   const userName = getInputValue("#registerName");
 
   if (!gapIsValid(userName) || !/^[a-힣]{1,50}$/.test(userName)) {
-    // 공백X 영어나 한글만
     addClass("#nameWarning", "show");
     return false;
   } else {
@@ -99,15 +96,12 @@ const nameIsValid = () => {
 const mailIsValid = () => {
   const userMail = getInputValue("#registerMail");
 
-  // '@', '.' 포함 여부
   if (userMail.includes("@") && userMail.includes(".")) {
     removeClass("#mailWarning", "show");
-    // 포함하고 있으면 버튼 활성화
     checkAvailableEmail.disabled = false;
     return userMail;
   } else if (gapIsValid(userMail)) {
     addClass("#mailWarning", "show");
-    // 포함하지 않으면 버튼 비활성화
     checkAvailableEmail.disabled = true;
     return false;
   }
@@ -135,7 +129,6 @@ const userBirth = () => {
   if (check.test(birthYear) && check.test(birthMonth) && check.test(birthDay)) {
     return [birthYear, birthMonth, birthDay].join("");
   } else {
-    // 유효하지 않은 날짜는 unknown으로 반환
     return "unknown";
   }
 };
@@ -152,7 +145,6 @@ agreeAll.addEventListener("change", e => {
   return true;
 });
 
-// 약관 세 개 전부 체크가 되어있을 때만 true
 const checkTerms = () => {
   const terms1 = getNode("#terms1");
   const terms2 = getNode("#terms2");
@@ -163,8 +155,7 @@ const checkTerms = () => {
 
 // 중복확인
 const checkId = async () => {
-  const userData = await tiger.get("http://localhost:3000/users");
-
+  const userData = await tiger.get(URL);
   const userID = userData.data.find(user => user.id === inputID.value);
 
   if (userID) {
@@ -178,7 +169,7 @@ const checkId = async () => {
   }
 };
 const checkEmail = async () => {
-  const userData = await tiger.get("http://localhost:3000/users");
+  const userData = await tiger.get(URL);
 
   const userEmail = userData.data.find(user => user.email === inputMail.value);
 
@@ -193,7 +184,7 @@ const checkEmail = async () => {
   }
 };
 
-// submit
+// submit 회원가입 버튼을 클릭했을 때 일어나는 이벤트 함수
 const submitBtnHandler = e => {
   e.preventDefault();
 
@@ -266,7 +257,6 @@ const submitBtnHandler = e => {
     AVAILABLE__EMAIL === true
   ) {
     const data = {
-      // Date.now()를 활용해서 중복 없는 id값 생성
       uniqueID: Date.now(),
       id: idIsValid(),
       name: nameIsValid(),
