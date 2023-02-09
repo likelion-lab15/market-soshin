@@ -1,4 +1,4 @@
-  {
+{
   "products": [
     {
       "id": "product-rksk",
@@ -131,84 +131,44 @@
   ],
   "users": [
     {
-      "uniqueID": 1675777628561,
-      "id": "asdaffas",
-      "name": "sdfafaf",
+      "uniqueID": 1675782203130,
+      "id": "asdsafs",
+      "name": "김영희",
       "password": "12341234",
-      "email": "ucasda@aaaa.com",
-      "phone": "01000000000",
-      "gender": "ddd",
-      "birth": "unknown"
+      "email": "dasfaf@dsdfda.com",
+      "phone": "01041000000",
+      "gender": "woman",
+      "birth": "20121211"
     },
     {
-      "uniqueID": 1675777721759,
-      "id": "asdaffa",
+      "uniqueID": 1675864393627,
+      "id": "chaechae123",
       "name": "채하은",
-      "password": "12341234",
-      "email": "ucasda@aaaa.com",
-      "phone": "01014021321",
-      "gender": "ddd",
-      "birth": "unknown"
-    },
-    {
-      "uniqueID": 1675778521501,
-      "id": "dsfafasf",
-      "name": "채하은",
-      "password": "12341234",
-      "email": "ucasda@aaaa.com",
-      "phone": "01000000000",
-      "gender": "aaaa",
-      "birth": "19941111"
-    },
-    {
-      "uniqueID": 1675778822682,
-      "id": "asdasfasf",
-      "name": "채하은",
-      "password": "12341234",
-      "email": "ucasda@aaaa.com",
-      "phone": "0124546546",
-      "gender": "unknown",
-      "birth": "12341212"
-    },
-    {
-      "uniqueID": 1675780495594,
-      "id": "asadafaf",
-      "name": "채하은",
-      "password": "12341234",
-      "email": "ucasda@aaaa.com",
-      "phone": "01000000000",
+      "password": "19940321",
+      "email": "asdf@naver.com",
+      "phone": "01012341234",
       "gender": "woman",
       "birth": "19940321"
     },
     {
-      "uniqueID": 1675782203130,
-      "id": "asdsafs",
+      "uniqueID": 1675865977163,
+      "id": "asdf0321",
+      "name": "홍길동",
+      "password": "12345678",
+      "email": "aaaaa@naver.com",
+      "phone": "01012341234",
+      "gender": "woman",
+      "birth": "19990919"
+    },
+    {
+      "uniqueID": 1675867059805,
+      "id": "asdfqwer123",
       "name": "채하은",
       "password": "12341234",
-      "email": "dasfaf@dsdfda.com",
-      "phone": "01041000000",
-      "gender": "man",
-      "birth": "20121211"
-    },
-    {
-      "uniqueID": 1675843369590,
-      "id": "asfagadghsfhdfhj",
-      "name": "sdkfjlsdjf",
-      "password": "12341234",
-      "email": "dfdsd@sss.com",
-      "phone": "01014021321",
+      "email": "fffff@naver.com",
+      "phone": "01012341234",
       "gender": "woman",
-      "birth": "unknown"
-    },
-    {
-      "uniqueID": 1675844865130,
-      "id": "asdafasgagagag",
-      "name": "dsfgsdg",
-      "password": "12341234",
-      "email": "aaaasdfsdaf@sdfagsd.com",
-      "phone": "01000000000",
-      "gender": "woman",
-      "birth": "11111111"
+      "birth": "19991231"
     }
   ]
 }
