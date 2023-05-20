@@ -128,7 +128,7 @@ URL : 🔗 https://######
 
 ### 🙋🏻‍♀️ 조성찬
 
-- 🔗[github/zeroto99](https://github.com/zeroto99)
+- 🔗[github/zerocalorie1226](https://github.com/zerocalorie1226)
 - 게시글 작성 페이지, 게시글 상세 페이지, 검색 페이지
 
 ### 🙋🏽‍♀️ 채하은
