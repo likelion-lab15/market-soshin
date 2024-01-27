@@ -1,6 +1,6 @@
 # <span id="top">✋🏻 MARKET-소신</span>
 
-[🔗 배포 URL][(http://#)](https://marketkarly-team.github.io/marketkarly-client/client/page/home.html)
+[🔗 배포 URL](https://marketkarly-team.github.io/marketkarly-client/client/page/home.html)
 
 ## 개요
 
